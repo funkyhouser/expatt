@@ -66,7 +66,7 @@
         </div>
     </footer>
     <div class="bg-[#25E59B] py-4 text-center">
-        <p class="uppercase text-[10px] text-[#3C137C] font-extrabold">powered by ousolutions</p>
+        <p class="uppercase text-[10px] text-[#3C137C] font-extrabold">powered by casakiev</p>
     </div>
     @stack('modals')
 

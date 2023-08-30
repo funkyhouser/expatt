@@ -191,7 +191,7 @@
     <section class="py-12">
         <div class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
             <p class="text-[#3C137C] font-black text-xl lg:text-3xl text-center mb-6">Explora la galería de fotos de Argentina</p>
-            <div class="grid grid-cols-[1fr_1fr_1fr_1fr_1fr] grid-rows-[1fr_1fr_1fr_1fr] gap-1 lg:gap-4 h-[500px] md:h-[1000px] lg:h-[1500px]">
+            <div class="grid grid-cols-[1fr_1fr_1fr_1fr_1fr] grid-rows-[1fr_1fr_1fr_1fr] gap-1 lg:gap-4 ">
                 <img class="object-cover w-full h-full rounded [grid-area:1/1/2/3]" src="{{ asset('images/galeria/1.jpg') }}" alt="">
                 <img class="object-cover w-full h-full rounded [grid-area:1/3/2/6]" src="{{ asset('images/galeria/2.jpg') }}" alt="">
                 <img class="object-cover w-full h-full rounded [grid-area:2/1/3/2]" src="{{ asset('images/galeria/3.jpg') }}" alt="">
