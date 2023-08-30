@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/migrate', function(){
-    \Artisan::call('migrate');
+    \Illuminate\Support\Facades\Artisan::call('migrate');
     dd('migrated!');
 });
 
