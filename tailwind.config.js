@@ -14,8 +14,14 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ['Roboto', ...defaultTheme.fontFamily.sans],
             },
+            fontSize: {
+                clamp: "clamp(1rem, 20vw, 10.625rem)",
+            },
+            backgroundImage: {
+                'hero-pattern': "url('/public/images/hero-pattern.svg')",
+            }
         },
     },
 

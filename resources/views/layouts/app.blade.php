@@ -1,45 +1,76 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Scripts -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-        <!-- Styles -->
-        @livewireStyles
-    </head>
-    <body class="font-sans antialiased">
-        <x-banner />
+    <!-- Styles -->
+    @livewireStyles
+</head>
 
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
-            @livewire('navigation-menu')
+<body class="min-h-screen font-sans antialiased text-[#636363]">
+    <div class="hidden lg:fixed lg:flex flex-col items-center text-[#BDBDBD] space-y-2 top-1/2 right-2 transform -translate-x-2 -translate-y-1/2">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-tiktok"></i>
+    </div>
+    {{-- <x-banner /> --}}
 
-            <!-- Page Heading -->
-            @if (isset($header))
-                <header class="bg-white dark:bg-gray-800 shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif
+    @livewire('navigation-menu')
 
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
+    <!-- Page Heading -->
+    @if (isset($header))
+        <header class="bg-white shadow dark:bg-gray-800">
+            <div class="px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                {{ $header }}
+            </div>
+        </header>
+    @endif
+
+    <!-- Page Content -->
+    <main class="mt-20">
+        {{ $slot }}
+    </main>
+    <footer class="bg-[#3C137C] py-6 lg:py-12 text-white">
+        <div class="flex justify-between max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
+            <div class="flex flex-col">
+                <img src="{{ asset('images/logo.svg') }}" class="mb-6" alt="Soy EXPAT" />
+                <p class="text-xs">© Soy Expat, 2023</p>
+            </div>
+            <div class="flex flex-col space-x-4 text-[#3C137C]">
+                <div class="flex justify-end mb-6 space-x-5">
+                    <img src="{{ asset('images/social/facebook.svg') }}" alt="facebook" />
+                    <img src="{{ asset('images/social/linkedin.svg') }}" alt="linkedin" />
+                    <img src="{{ asset('images/social/instagram.svg') }}" alt="instagram" />
+                </div>
+                <div class="flex flex-col lg:space-x-5 lg:flex-row">
+                    <a href="#" class="mb-2 text-xs font-bold text-white lg:mb-0">Términos y condiciones</a>
+                    <a href="#" class="text-xs font-bold text-white">Política de privacidad</a>
+                </div>
+            </div>
         </div>
+    </footer>
+    <div class="bg-[#25E59B] py-4 text-center">
+        <p class="uppercase text-[10px] text-[#3C137C] font-extrabold">powered by ousolutions</p>
+    </div>
+    @stack('modals')
 
-        @stack('modals')
+    @livewireScripts
+</body>
 
-        @livewireScripts
-    </body>
 </html>
