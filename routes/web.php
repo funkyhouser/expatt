@@ -17,6 +17,11 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/migrate', function(){
+    \Artisan::call('migrate');
+    dd('migrated!');
+});
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
