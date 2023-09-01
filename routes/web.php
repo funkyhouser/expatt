@@ -15,12 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('home');
 
-Route::get('/migrate', function(){
-    \Illuminate\Support\Facades\Artisan::call('migrate');
-    dd('migrated!');
-});
+Route::get('/vivir-en/argentina', function(){
+    return view('argentina');
+})->name('argentina');
 
 Route::middleware([
     'auth:sanctum',

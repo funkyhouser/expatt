@@ -5,7 +5,7 @@
         :class="(atTop === false) ? 'h-16' : 'h-20'">
         <div class="flex">
             <!-- Logo -->
-            <a class="flex items-center shrink-0" href="#">
+            <a class="flex items-center shrink-0" href="{{ route('home') }}">
                 <img src="{{ asset('images/logo.svg') }}" class="transition-all duration-300 ease-in-out"
                     :class="(atTop === false) ? 'h-5' : 'h-8'" alt="Soy EXPAT" />
             </a>

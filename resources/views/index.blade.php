@@ -15,7 +15,7 @@
                     {{-- COL 1 --}}
                     <div class="flex flex-col space-y-4">
                         {{-- Arg --}}
-                        <a href="#" target="_blank"
+                        <a href="{{ route('argentina') }}"
                             class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
                             <div class="flex items-center p-3">
                                 <img class="mr-2" src="{{ asset('images/flags/argentina.png') }}"
@@ -28,7 +28,7 @@
                             </span>
                         </a>
                         {{-- Bol --}}
-                        <a href="#" target="_blank"
+                        <a href="#"
                             class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
                             <div class="flex items-center p-3">
                                 <img class="mr-2" src="{{ asset('images/flags/bolivia.png') }}" alt="Bandera Bolivia">
@@ -40,7 +40,7 @@
                             </span>
                         </a>
                         {{-- Brasil --}}
-                        <a href="#" target="_blank"
+                        <a href="#"
                             class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
                             <div class="flex items-center p-3">
                                 <img class="mr-2" src="{{ asset('images/flags/brasil.png') }}" alt="Bandera Brasil">
@@ -52,7 +52,7 @@
                             </span>
                         </a>
                         {{-- Chile --}}
-                        <a href="#" target="_blank"
+                        <a href="#"
                             class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
                             <div class="flex items-center p-3">
                                 <img class="mr-2" src="{{ asset('images/flags/chile.png') }}" alt="Bandera Chile">
@@ -64,7 +64,7 @@
                             </span>
                         </a>
                         {{-- Col --}}
-                        <a href="#" target="_blank"
+                        <a href="#"
                             class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
                             <div class="flex items-center p-3">
                                 <img class="mr-2" src="{{ asset('images/flags/colombia.png') }}" alt="Bandera Colombia">
@@ -79,7 +79,7 @@
                     {{-- COL 2 --}}
                     <div class="flex flex-col space-y-4">
                         {{-- Ecu --}}
-                        <a href="#" target="_blank"
+                        <a href="#"
                             class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
                             <div class="flex items-center p-3">
                                 <img class="mr-2" src="{{ asset('images/flags/ecuador.png') }}" alt="Bandera Argentina">
@@ -91,7 +91,7 @@
                             </span>
                         </a>
                         {{-- Ecu --}}
-                        <a href="#" target="_blank"
+                        <a href="#"
                             class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
                             <div class="flex items-center p-3">
                                 <img class="mr-2" src="{{ asset('images/flags/mexico.png') }}" alt="Bandera Argentina">
@@ -103,7 +103,7 @@
                             </span>
                         </a>
                         {{-- Par --}}
-                        <a href="#" target="_blank"
+                        <a href="#"
                             class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
                             <div class="flex items-center p-3">
                                 <img class="mr-2" src="{{ asset('images/flags/paraguay.png') }}" alt="Bandera Paraguay">
@@ -115,7 +115,7 @@
                             </span>
                         </a>
                         {{-- Per --}}
-                        <a href="#" target="_blank"
+                        <a href="#"
                             class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
                             <div class="flex items-center p-3">
                                 <img class="mr-2" src="{{ asset('images/flags/peru.png') }}" alt="Bandera Perú">
@@ -127,7 +127,7 @@
                             </span>
                         </a>
                         {{-- Otro --}}
-                        <a href="#" target="_blank"
+                        <a href="#"
                             class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
                             <div class="flex items-center p-3">
                                 <img class="mr-2" src="{{ asset('images/flags/otros.png') }}" alt="Bandera Otros">
@@ -248,34 +248,34 @@
 
             <div x-data class="grid grid-cols-[1fr_1fr_1fr_1fr_1fr] grid-rows-[1fr_1fr_1fr_1fr] gap-1 lg:gap-4 ">
                 <img @click="$dispatch('notify', { imgModalSrc: '{{ asset('images/galeria/1.jpg') }}' })"
-                    class="object-cover w-full h-full rounded [grid-area:1/1/2/3]"
+                    class="cursor-pointer object-cover w-full h-full rounded [grid-area:1/1/2/3]"
                     src="{{ asset('images/galeria/1.jpg') }}" alt="">
                 <img @click="$dispatch('notify', { imgModalSrc: '{{ asset('images/galeria/2.jpg') }}' })"
-                    class="object-cover w-full h-full rounded [grid-area:1/3/2/6]"
+                    class="cursor-pointer object-cover w-full h-full rounded [grid-area:1/3/2/6]"
                     src="{{ asset('images/galeria/2.jpg') }}" alt="">
                 <img @click="$dispatch('notify', { imgModalSrc: '{{ asset('images/galeria/3.jpg') }}' })"
-                    class="object-cover w-full h-full rounded [grid-area:2/1/3/2]"
+                    class="cursor-pointer object-cover w-full h-full rounded [grid-area:2/1/3/2]"
                     src="{{ asset('images/galeria/3.jpg') }}" alt="">
                 <img @click="$dispatch('notify', { imgModalSrc: '{{ asset('images/galeria/4.jpg') }}' })"
-                    class="object-cover w-full h-full rounded [grid-area:2/2/3/3]"
+                    class="cursor-pointer object-cover w-full h-full rounded [grid-area:2/2/3/3]"
                     src="{{ asset('images/galeria/4.jpg') }}" alt="">
                 <img @click="$dispatch('notify', { imgModalSrc: '{{ asset('images/galeria/5.jpg') }}' })"
-                    class="object-cover w-full h-full rounded [grid-area:2/3/3/5]"
+                    class="cursor-pointer object-cover w-full h-full rounded [grid-area:2/3/3/5]"
                     src="{{ asset('images/galeria/5.jpg') }}" alt="">
                 <img @click="$dispatch('notify', { imgModalSrc: '{{ asset('images/galeria/6.jpg') }}' })"
-                    class="object-cover w-full h-full rounded [grid-area:2/5/3/6]"
+                    class="cursor-pointer object-cover w-full h-full rounded [grid-area:2/5/3/6]"
                     src="{{ asset('images/galeria/6.jpg') }}" alt="">
                 <img @click="$dispatch('notify', { imgModalSrc: '{{ asset('images/galeria/7.jpg') }}' })"
-                    class="object-cover w-full h-full rounded [grid-area:3/1/4/4]"
+                    class="cursor-pointer object-cover w-full h-full rounded [grid-area:3/1/4/4]"
                     src="{{ asset('images/galeria/7.jpg') }}" alt="">
                 <img @click="$dispatch('notify', { imgModalSrc: '{{ asset('images/galeria/8.jpg') }}' })"
-                    class="object-cover w-full h-full rounded [grid-area:3/4/5/6]"
+                    class="cursor-pointer object-cover w-full h-full rounded [grid-area:3/4/5/6]"
                     src="{{ asset('images/galeria/8.jpg') }}" alt="">
                 <img @click="$dispatch('notify', { imgModalSrc: '{{ asset('images/galeria/9.jpg') }}' })"
-                    class="object-cover w-full h-full rounded [grid-area:4/1/5/3]"
+                    class="cursor-pointer object-cover w-full h-full rounded [grid-area:4/1/5/3]"
                     src="{{ asset('images/galeria/9.jpg') }}" alt="">
                 <img @click="$dispatch('notify', { imgModalSrc: '{{ asset('images/galeria/10.jpg') }}' })"
-                    class="object-cover w-full h-full rounded [grid-area:4/3/5/4]"
+                    class="cursor-pointer object-cover w-full h-full rounded [grid-area:4/3/5/4]"
                     src="{{ asset('images/galeria/10.jpg') }}" alt="">
             </div>
         </div>
