@@ -22,6 +22,7 @@ export default {
             backgroundImage: {
                 'hero-pattern': "url('/public/images/hero-pattern.svg')",
                 'banner-argentina': "url('/public/images/argentina/banner-argentina.jpg')",
+                'spotlight-pattern': "url('/public/images/spotlight/spotlight-pattern.svg')",
             }
 
         },
