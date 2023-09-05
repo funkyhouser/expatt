@@ -23,6 +23,8 @@ export default {
                 'hero-pattern': "url('/public/images/hero-pattern.svg')",
                 'banner-argentina': "url('/public/images/argentina/banner-argentina.jpg')",
                 'spotlight-pattern': "url('/public/images/spotlight/spotlight-pattern.svg')",
+                'santander-pattern': "url('/public/images/santander/bg-santander.svg')",
+                'desarrola-futuro': "url('/public/images/desarrolla-tu-futuro/bg.jpg')",
             }
 
         },

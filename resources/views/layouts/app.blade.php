@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
 
 <head>
     <meta charset="utf-8">
@@ -18,7 +18,13 @@
 
     <!-- Styles -->
     @livewireStyles
-</head>
+    </head>
+    <style>
+    html {
+    scroll-padding-top: 120px;
+    }
+    </style>
+
 
 <body class="min-h-screen font-sans antialiased text-[#636363]">
     <div class="hidden lg:fixed lg:flex flex-col items-center text-[#BDBDBD] space-y-2 top-1/2 right-2 transform -translate-x-2 -translate-y-1/2">

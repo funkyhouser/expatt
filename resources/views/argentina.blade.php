@@ -1,6 +1,6 @@
 <x-app-layout>
     {{-- HERO --}}
-    <section class="min-h-[590px] lg:h-[590px]  bg-banner-argentina py-12">
+    <section class="min-h-[590px] lg:h-[590px] bg-banner-argentina py-12">
         <div
             class="grid items-center h-full max-w-screen-xl grid-cols-1 gap-4 px-4 mx-auto my-auto sm:px-6 lg:px-8 lg:grid-cols-2">
             {{-- COL-1 --}}
@@ -60,7 +60,7 @@
     {{-- Comienza tu vida en --}}
     <section class="py-12 bg-white">
         <div class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
-            <p class="mb-6 text-xl font-black text-center text-white lg:text-3xl">Trabajar en Argentina
+            <p class="mb-6 text-xl font-black text-center text-[#3C137C] lg:text-3xl">Comienza tu nueva vida en Argentina
             </p>
             <div class="grid gap-3 font-black text-white gap-y-6 lg:grid-cols-3">
                 <div class="flex flex-col overflow-hidden bg-white rounded drop-shadow-md">
@@ -278,19 +278,40 @@
                 <img class="w-5/6" src="{{ asset('images/spotlight/spotlight-text.svg') }}" alt="">
             </div>
 
-            <a href="#" class="relative flex flex-col items-center justify-end isolate min-h-[300px]">
+            <a href="{{ url('/desarrolla-tu-futuro/argentina#trabaja') }}" target="_blank" class="relative flex flex-col items-center justify-end isolate min-h-[300px]">
                 <p class="w-1/3 flex justify-center p-5 px-6 bg-[#3CEBA7]">Trabaja</p>
                 <img src="{{ asset('images/spotlight/trabaja.jpg') }}" alt="" class="absolute inset-0 object-cover w-full h-full -z-10">
             </a>
-            <a href="#" class="relative flex flex-col items-center justify-end isolate min-h-[300px]">
+            <a href="{{ url('/desarrolla-tu-futuro/argentina#estudia') }}" target="_blank" class="relative flex flex-col items-center justify-end isolate min-h-[300px]">
                 <p class="w-1/3 flex justify-center p-5 px-6 bg-[#3CEBA7]">Estudia</p>
                 <img src="{{ asset('images/spotlight/estudia.jpg') }}" alt="" class="absolute inset-0 object-cover w-full h-full -z-10">
             </a>
         </div>
     </section>
+     {{-- SANTANDER --}}
+     <section class="py-12">
+        <div class="max-w-screen-lg px-4 mx-auto my-auto sm:px-6 lg:px-8">
+            <div class="grid bg-[#402D97] lg:grid-cols-3">
+                <div class="relative col-span-2 bg-santander-pattern lg:h-80">
+                    <img class="absolute bottom-0 max-w-sm -translate-x-1/2 left-1/2" src="{{ asset('images/santander/santander-girl.png') }}" alt="santander">
+                    <img class="absolute w-20 -translate-y-1/2 left-12 top-1/2" src="{{ asset('images/santander/santander-logo.svg') }}" alt="santander logo">
+                </div>
+                <div class="flex flex-col justify-center w-4/5 mx-auto">
+                    <h2 class="mb-3 text-2xl font-black text-white">Abre tu cuenta SoyExpat en Santander, ¡100% gratis!</h2>
+                    <p class="text-[#F9F9F9] mb-4" >Obtén tu tarjeta de débito ahora y empieza a disfrutar ahorros y promociones increíbles en tus compras.</p>
+                    <div class="flex text-center">
+                        <a href="#"
+                            class="text-[#47108E] font-bold py-3 w-full lg:w-3/5  border-b-2 border-[#3CEBA7] bg-white rounded-t">
+                            ¡Pedila ahora!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
     {{-- Encontra tu casa --}}
     <section class="py-12 bg-white">
-        <div class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
+        <div class="max-w-screen-lg px-4 mx-auto my-auto sm:px-6 lg:px-8">
             <p class="mb-6 text-xl font-black text-center text-[#3C137C] lg:text-3xl">Te ayudamos a encontrar tu casa</p>
             <div class="flex justify-center gap-4 text-lg font-black text-white lg:text-2xl">
                 <a href="#" class="overflow-hidden rounded">
@@ -304,8 +325,120 @@
             </div>
         </div>
     </section>
+    <section class="pb-12">
+        <div x-data="{ imgModal : false, imgModalSrc : '' }"
+            class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
+            <p class="text-[#3C137C] font-black text-xl lg:text-3xl text-center mb-6">Explora la galería de fotos de
+                Argentina</p>
+
+
+            <div x-data="{
+                imageGalleryOpened: false,
+                imageGalleryActiveUrl: null,
+                imageGalleryImageIndex: null,
+
+                imageGalleryOpen(event) {
+                    this.imageGalleryImageIndex = event.target.dataset.index;
+                    this.imageGalleryActiveUrl = event.target.src;
+                    this.imageGalleryOpened = true;
+                },
+                imageGalleryClose() {
+                    this.imageGalleryOpened = false;
+                    setTimeout(() => this.imageGalleryActiveUrl = null, 300);
+                },
+                imageGalleryNext(){
+                    this.imageGalleryImageIndex = (this.imageGalleryImageIndex == 10) ? 1 : (parseInt(this.imageGalleryImageIndex) + 1);
+                    this.imageGalleryActiveUrl = this.$refs.gallery.querySelector('[data-index=\'' + this.imageGalleryImageIndex + '\']').src;
+                },
+                imageGalleryPrev() {
+                    this.imageGalleryImageIndex = (this.imageGalleryImageIndex == 1) ? 10 : (parseInt(this.imageGalleryImageIndex) - 1);
+                    this.imageGalleryActiveUrl = this.$refs.gallery.querySelector('[data-index=\'' + this.imageGalleryImageIndex + '\']').src;
+
+                }
+            }"
+            @image-gallery-next.window="imageGalleryNext()"
+            @image-gallery-prev.window="imageGalleryPrev()"
+            @keyup.right.window="imageGalleryNext();"
+            @keyup.left.window="imageGalleryPrev();"
+            class="w-full h-full select-none">
+            <div class="max-w-6xl mx-auto duration-1000 delay-300 opacity-0 select-none ease animate-fade-in-view" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+                <div x-ref="gallery" id="gallery" class="grid grid-cols-[1fr_1fr_1fr_1fr_1fr] grid-rows-[1fr_1fr_1fr_1fr] gap-1 lg:gap-4 ">
+                    <img @click="imageGalleryOpen"
+                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:1/1/2/3]"
+                        src="{{ asset('images/galeria/1.jpg') }}" alt="" data-index="1">
+                    <img @click="imageGalleryOpen"
+                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:1/3/2/6]"
+                        src="{{ asset('images/galeria/2.jpg') }}" alt="" data-index="2">
+                    <img @click="imageGalleryOpen"
+                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:2/1/3/2]"
+                        src="{{ asset('images/galeria/3.jpg') }}" alt="" data-index="3">
+                    <img @click="imageGalleryOpen"
+                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:2/2/3/3]"
+                        src="{{ asset('images/galeria/4.jpg') }}" alt="" data-index="4">
+                    <img @click="imageGalleryOpen"
+                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:2/3/3/5]"
+                        src="{{ asset('images/galeria/5.jpg') }}" alt="" data-index="5">
+                    <img @click="imageGalleryOpen"
+                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:2/5/3/6]"
+                        src="{{ asset('images/galeria/6.jpg') }}" alt="" data-index="6">
+                    <img @click="imageGalleryOpen"
+                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:3/1/4/4]"
+                        src="{{ asset('images/galeria/7.jpg') }}" alt="" data-index="7">
+                    <img @click="imageGalleryOpen"
+                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:3/4/5/6]"
+                        src="{{ asset('images/galeria/8.jpg') }}" alt="" data-index="8">
+                    <img @click="imageGalleryOpen"
+                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:4/1/5/3]"
+                        src="{{ asset('images/galeria/9.jpg') }}" alt="" data-index="9">
+                    <img @click="imageGalleryOpen"
+                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:4/3/5/4]"
+                        src="{{ asset('images/galeria/10.jpg') }}" alt="" data-index="10">
+                </div>
+            </div>
+            <template x-teleport="body">
+                <div x-show="imageGalleryOpened" x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100"
+                    x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100"
+                    x-transition:leave-end="opacity-0 transform scale-90"
+                    @click="imageGalleryClose"
+                    @keydown.window.escape="imageGalleryClose"
+                    x-trap.inert.noscroll="imageGalleryOpened"
+                    class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-75">
+                    <div @click.outside="imgModal = false" class="relative flex justify-center w-full h-full lg:w-2/3" x-cloak>
+                        <div @click="$event.stopPropagation(); $dispatch('image-gallery-prev')" class="absolute p-3 text-white transform -translate-y-1/2 rounded-full cursor-pointer -left-4 -translate-x-0 bg-white/10 hover:bg-white/20 lg:-left-16 top-1/2">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
+                        </div>
+                        <div @click="$event.stopPropagation(); $dispatch('image-gallery-next');" class="absolute p-3 text-white transform -translate-y-1/2 rounded-full cursor-pointer -right-4 -translate-x-0 bg-white/10 hover:bg-white/20 lg:-right-16 top-1/2">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+                        </div>
+
+                        <div class="flex flex-col justify-center w-full h-100">
+                            <div class="flex justify-end">
+                                <button @click="imgModal = false" class="outline-none focus:outline-none">
+                                    <svg class="text-white fill-current " xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 18 18">
+                                        <path
+                                            d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <img
+                                x-show="imageGalleryOpened"
+                                x-transition:enter="transition ease-in-out duration-300"
+                                x-transition:enter-start="opacity-0 transform scale-50"
+                                x-transition:leave="transition ease-in-in duration-300"
+                                x-transition:leave-end="opacity-0 transform scale-50"
+                                class="object-contain w-full h-full" :src="imageGalleryActiveUrl" alt="" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+            </template>
+            </div>
+        </div>
+    </section>
     {{-- SUMARTE android/ios --}}
-    <section class="bg-[#F9F9F9]">
+    {{-- <section class="bg-[#F9F9F9]">
         <div class="px-4 mx-auto my-auto sm:px-6 lg:px-8 grid lg:grid-cols-2 lg:h-[570px]  py-8 lg:py-0">
             <div class="flex flex-col justify-center text-4xl bg-spotlight-pattern bg-[left_-24%] w-full lg:w-3/4 mx-auto mb-6 lg:mb-0">
                 <h2 class="text-[#3C137C] font-black mb-4">Súmate a la comunidad <br>de expatriados más grande.</h2>
@@ -323,5 +456,5 @@
                 <img src="{{ asset('images/sumate/sumate-mobile.jpg') }}" alt="" class="absolute inset-0 object-cover w-full h-full" >
             </div>
         </div>
-    </section>
+    </section> --}}
 </x-app-layout>

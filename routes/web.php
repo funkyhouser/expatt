@@ -20,6 +20,9 @@ Route::get('/', function () {
 Route::get('/vivir-en/argentina', function(){
     return view('argentina');
 })->name('argentina');
+Route::get('/desarrolla-tu-futuro/argentina', function(){
+    return view('futuro-argentina');
+});
 
 Route::middleware([
     'auth:sanctum',
