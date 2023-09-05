@@ -137,11 +137,11 @@
             <p class="mb-6 text-xl font-black text-center text-[#3C137C] lg:text-3xl">Te ayudamos a encontrar tu casa</p>
             <div class="flex justify-center gap-4 text-lg font-black text-white lg:text-2xl">
                 <a href="#" class="overflow-hidden rounded">
-                    <img class="aspect-square" src="{{ asset('images/casa/renta.jpg') }}" alt="renta">
+                    <img class="object-cover w-full" src="{{ asset('images/casa/renta.jpg') }}" alt="renta">
                     <p class="text-center w-full py-2 lg:py-4 bg-[#3C137C]">Renta</p>
                 </a>
                 <a href="#" class="overflow-hidden rounded">
-                    <img class="aspect-square" src="{{ asset('images/casa/compra.jpg') }}" alt="compra">
+                    <img class="object-cover w-full" src="{{ asset('images/casa/compra.jpg') }}" alt="compra">
                     <p class="text-center w-full py-2 lg:py-4 bg-[#3C137C]">Compra</p>
                 </a>
             </div>
