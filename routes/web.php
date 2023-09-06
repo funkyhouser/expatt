@@ -20,8 +20,24 @@ Route::get('/', function () {
 Route::get('/vivir-en/argentina', function(){
     return view('argentina');
 })->name('argentina');
+
 Route::get('/desarrolla-tu-futuro/argentina', function(){
     return view('futuro-argentina');
+});
+
+Route::get('/renta-en/argentina', function(){
+    return view('renta-argentina');
+});
+Route::get('/venta-en/argentina', function(){
+    return view('venta-argentina');
+});
+
+Route::get('/salud/argentina', function(){
+    return view('salud-argentina');
+});
+
+Route::get('/visado-documentacion/argentina', function(){
+    return view('visado-documentacion-argentina');
 });
 
 Route::middleware([

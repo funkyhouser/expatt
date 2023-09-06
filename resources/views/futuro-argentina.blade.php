@@ -2,7 +2,7 @@
     {{-- HERO --}}
     <section class="min-h-[500px] h-[500px] lg:h-[630px] bg-desarrola-futuro bg-no-repeat bg-center bg-cover">
         <div class="flex flex-col justify-end h-full max-w-screen-lg px-4 pb-16 mx-auto my-auto sm:px-6 lg:px-8">
-            <h1 class="text-4xl font-black text-white uppercase lg:text-8xl leading-[.9_!important]">
+            <h1 class="text-4xl font-black text-white uppercase lg:text-7xl leading-[.9_!important]">
                 Desarrolla<br>
                 tu futuro
             </h1>
@@ -93,18 +93,19 @@
                         Universidades provinciales.<br>
                         Universidades privadas.<br><br>
 
-                        En cualquier caso, ya sea para completar tus estudios o inscribir a tus hijos, te recomendamos revisar la visa para estudiantes (ver /Antes de viajar).
-
+                        <i>En cualquier caso, ya sea para completar tus estudios o inscribir a tus hijos, te recomendamos revisar la visa para estudiantes (ver /Antes de viajar).</i>
                     </p>
-
-
                 </div>
+
                 <div class="hidden lg:block lg:col-span-1">
                     <img src="{{ asset('images/ads/belgrano-ads.jpg') }}" alt="" class="w-full mb-4">
                     <img src="{{ asset('images/ads/uade-ads.jpg') }}" alt="" class="w-full mb-4">
                     <img src="{{ asset('images/ads/uca-ads.jpg') }}" alt="" class="w-full">
                 </div>
             </article>
+            <div class="my-6 text-center">
+                <a href="{{ route('argentina') }}" class="mx-auto block w-full lg:w-max rounded-sm px-0 lg:px-10 py-3 shadow-md bg-[#3C137C] font-medium text-2xl text-white">Volver atrás</a>
+            </div>
             <div class="py-8">
                 <img src="{{ asset('images/ads/uba-ads.jpg') }}" alt="" class="w-full">
             </div>
@@ -144,119 +145,6 @@
                     <img class="object-cover w-full" src="{{ asset('images/casa/compra.jpg') }}" alt="compra">
                     <p class="text-center w-full py-2 lg:py-4 bg-[#3C137C]">Compra</p>
                 </a>
-            </div>
-        </div>
-    </section>
-    {{-- Galeria --}}
-    <section class="pb-12">
-        <div x-data="{ imgModal : false, imgModalSrc : '' }"
-            class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
-            <p class="text-[#3C137C] font-black text-xl lg:text-3xl text-center mb-6">Explora la galería de fotos de
-                Argentina</p>
-
-
-            <div x-data="{
-                imageGalleryOpened: false,
-                imageGalleryActiveUrl: null,
-                imageGalleryImageIndex: null,
-
-                imageGalleryOpen(event) {
-                    this.imageGalleryImageIndex = event.target.dataset.index;
-                    this.imageGalleryActiveUrl = event.target.src;
-                    this.imageGalleryOpened = true;
-                },
-                imageGalleryClose() {
-                    this.imageGalleryOpened = false;
-                    setTimeout(() => this.imageGalleryActiveUrl = null, 300);
-                },
-                imageGalleryNext(){
-                    this.imageGalleryImageIndex = (this.imageGalleryImageIndex == 10) ? 1 : (parseInt(this.imageGalleryImageIndex) + 1);
-                    this.imageGalleryActiveUrl = this.$refs.gallery.querySelector('[data-index=\'' + this.imageGalleryImageIndex + '\']').src;
-                },
-                imageGalleryPrev() {
-                    this.imageGalleryImageIndex = (this.imageGalleryImageIndex == 1) ? 10 : (parseInt(this.imageGalleryImageIndex) - 1);
-                    this.imageGalleryActiveUrl = this.$refs.gallery.querySelector('[data-index=\'' + this.imageGalleryImageIndex + '\']').src;
-
-                }
-            }"
-            @image-gallery-next.window="imageGalleryNext()"
-            @image-gallery-prev.window="imageGalleryPrev()"
-            @keyup.right.window="imageGalleryNext();"
-            @keyup.left.window="imageGalleryPrev();"
-            class="w-full h-full select-none">
-            <div class="max-w-6xl mx-auto duration-1000 delay-300 opacity-0 select-none ease animate-fade-in-view" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-                <div x-ref="gallery" id="gallery" class="grid grid-cols-[1fr_1fr_1fr_1fr_1fr] grid-rows-[1fr_1fr_1fr_1fr] gap-1 lg:gap-4 ">
-                    <img @click="imageGalleryOpen"
-                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:1/1/2/3]"
-                        src="{{ asset('images/galeria/1.jpg') }}" alt="" data-index="1">
-                    <img @click="imageGalleryOpen"
-                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:1/3/2/6]"
-                        src="{{ asset('images/galeria/2.jpg') }}" alt="" data-index="2">
-                    <img @click="imageGalleryOpen"
-                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:2/1/3/2]"
-                        src="{{ asset('images/galeria/3.jpg') }}" alt="" data-index="3">
-                    <img @click="imageGalleryOpen"
-                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:2/2/3/3]"
-                        src="{{ asset('images/galeria/4.jpg') }}" alt="" data-index="4">
-                    <img @click="imageGalleryOpen"
-                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:2/3/3/5]"
-                        src="{{ asset('images/galeria/5.jpg') }}" alt="" data-index="5">
-                    <img @click="imageGalleryOpen"
-                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:2/5/3/6]"
-                        src="{{ asset('images/galeria/6.jpg') }}" alt="" data-index="6">
-                    <img @click="imageGalleryOpen"
-                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:3/1/4/4]"
-                        src="{{ asset('images/galeria/7.jpg') }}" alt="" data-index="7">
-                    <img @click="imageGalleryOpen"
-                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:3/4/5/6]"
-                        src="{{ asset('images/galeria/8.jpg') }}" alt="" data-index="8">
-                    <img @click="imageGalleryOpen"
-                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:4/1/5/3]"
-                        src="{{ asset('images/galeria/9.jpg') }}" alt="" data-index="9">
-                    <img @click="imageGalleryOpen"
-                        class="cursor-pointer object-cover w-full h-full rounded [grid-area:4/3/5/4]"
-                        src="{{ asset('images/galeria/10.jpg') }}" alt="" data-index="10">
-                </div>
-            </div>
-            <template x-teleport="body">
-                <div x-show="imageGalleryOpened" x-transition:enter="transition ease-out duration-300"
-                    x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100"
-                    x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100"
-                    x-transition:leave-end="opacity-0 transform scale-90"
-                    @click="imageGalleryClose"
-                    @keydown.window.escape="imageGalleryClose"
-                    x-trap.inert.noscroll="imageGalleryOpened"
-                    class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-75">
-                    <div @click.outside="imgModal = false" class="relative flex justify-center w-full h-full lg:w-2/3" x-cloak>
-                        <div @click="$event.stopPropagation(); $dispatch('image-gallery-prev')" class="absolute p-3 text-white transform -translate-y-1/2 rounded-full cursor-pointer -left-4 -translate-x-0 bg-white/10 hover:bg-white/20 lg:-left-16 top-1/2">
-                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
-                        </div>
-                        <div @click="$event.stopPropagation(); $dispatch('image-gallery-next');" class="absolute p-3 text-white transform -translate-y-1/2 rounded-full cursor-pointer -right-4 -translate-x-0 bg-white/10 hover:bg-white/20 lg:-right-16 top-1/2">
-                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
-                        </div>
-
-                        <div class="flex flex-col justify-center w-full h-100">
-                            <div class="flex justify-end">
-                                <button @click="imgModal = false" class="outline-none focus:outline-none">
-                                    <svg class="text-white fill-current " xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                        viewBox="0 0 18 18">
-                                        <path
-                                            d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
-                                        </path>
-                                    </svg>
-                                </button>
-                            </div>
-                            <img
-                                x-show="imageGalleryOpened"
-                                x-transition:enter="transition ease-in-out duration-300"
-                                x-transition:enter-start="opacity-0 transform scale-50"
-                                x-transition:leave="transition ease-in-in duration-300"
-                                x-transition:leave-end="opacity-0 transform scale-50"
-                                class="object-contain w-full h-full" :src="imageGalleryActiveUrl" alt="" style="display: none;">
-                        </div>
-                    </div>
-                </div>
-            </template>
             </div>
         </div>
     </section>

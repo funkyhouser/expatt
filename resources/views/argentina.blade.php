@@ -1,6 +1,6 @@
 <x-app-layout>
     {{-- HERO --}}
-    <section class="min-h-[590px] lg:h-[590px] bg-banner-argentina py-12">
+    <section class="min-h-[590px] lg:h-[590px] bg-banner-argentina bg-cover bg-center py-12">
         <div
             class="grid items-center h-full max-w-screen-xl grid-cols-1 gap-4 px-4 mx-auto my-auto sm:px-6 lg:px-8 lg:grid-cols-2">
             {{-- COL-1 --}}
@@ -10,10 +10,9 @@
                 </h1>
                 <p class="text-[#25E59B] text-4xl font-semibold ">Lo que tienes que saber</p>
                 <p class="py-4 text-[#F9F9F9]  lg:w-3/4">Descubre todo sobre Argentina para comenzar tu vida como
-                    expatriado con el pie correcto: su cultura e identidad, cuáles son las mejores ciudades para vivir y
-                    mucho más.</p>
+                    expatriado con el pie correcto: su cultura e identidad, cuáles son las mejores ciudades para vivir y mucho más.</p>
                 <div class="flex text-center">
-                    <a href="#"
+                    <a href="#conoce-argentina"
                         class="text-[#47108E] font-bold py-3 w-full lg:w-1/3 border-b-2 border-[#3CEBA7] bg-white rounded-t">
                         Conoce Argentina
                     </a>
@@ -26,40 +25,97 @@
         <div class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
             <p class="mb-6 text-xl font-black text-center text-white lg:text-3xl">Información útil para expatriados</p>
             <div class="grid gap-6 font-black text-white lg:grid-cols-3">
-                <div class="flex flex-col h-full text-center">
+                <a href="{{ url('/visado-documentacion/argentina') }}" class="flex flex-col h-full text-center">
                     <div class="flex items-center justify-center h-40">
-                        <div class="p-8 bg-white rounded-full">
-                            <img class="flex items-center justify-center h-16 text-center aspect-square"
+                        <div class="relative p-6">
+                            <svg class="absolute top-1 left-1 z-[-1]" width="100%" height="auto" viewBox="0 0 222 222" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_1_3063)">
+                                <path d="M204.543 90.0568H177.171L198.385 68.848C193.558 57.2669 186.449 46.4167 177.02 36.9968C138.348 -1.66561 75.6516 -1.66561 36.9798 36.9968C13.3142 60.6568 4.1567 93.3081 9.45706 123.943H36.8286L15.6145 145.152C20.4485 156.733 27.5514 167.583 36.9798 177.003C75.6516 215.666 138.348 215.666 177.02 177.003C200.686 153.343 209.843 120.692 204.543 90.0568Z" fill="#00BDFF"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_d_1_3063" x="0" y="0" width="222" height="222" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dx="4" dy="4"/>
+                                <feGaussianBlur stdDeviation="6"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_3063"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3063" result="shape"/>
+                                </filter>
+                                </defs>
+                            </svg>
+                            <div class="p-8 bg-white rounded-full">
+                                <img class="flex items-center justify-center h-16 text-center aspect-square"
                                 src="{{ asset('images/icons/documentacion.svg') }}" alt="documentacion">
+                            </div>
                         </div>
                     </div>
                     <h2 class="mt-4">Visado y documentación</h2>
-                </div>
-                <div class="flex flex-col h-full text-center">
+                </a>
+                <a href="#" class="flex flex-col h-full text-center">
                     <div class="flex items-center justify-center h-40">
-                        <div class="p-8 bg-white rounded-full">
-                            <img class="flex items-center justify-center h-16 text-center aspect-square"
-                                src="{{ asset('images/icons/impuestos.svg') }}" alt="images/icons/impuestos">
+                        <div class="relative p-6">
+                            <svg class="absolute top-1 left-1 z-[-1]" width="100%" height="auto" viewBox="0 0 222 222" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_1_3063)">
+                                <path d="M204.543 90.0568H177.171L198.385 68.848C193.558 57.2669 186.449 46.4167 177.02 36.9968C138.348 -1.66561 75.6516 -1.66561 36.9798 36.9968C13.3142 60.6568 4.1567 93.3081 9.45706 123.943H36.8286L15.6145 145.152C20.4485 156.733 27.5514 167.583 36.9798 177.003C75.6516 215.666 138.348 215.666 177.02 177.003C200.686 153.343 209.843 120.692 204.543 90.0568Z" fill="#FF7300"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_d_1_3063" x="0" y="0" width="222" height="222" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dx="4" dy="4"/>
+                                <feGaussianBlur stdDeviation="6"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_3063"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3063" result="shape"/>
+                                </filter>
+                                </defs>
+                            </svg>
+                            <div class="p-8 bg-white rounded-full">
+                                <img class="flex items-center justify-center h-16 text-center aspect-square"
+                                src="{{ asset('images/icons/impuestos.svg') }}" alt="impuestos">
+                            </div>
                         </div>
                     </div>
                     <h2 class="mt-4">Impuestos para extranjeros</h2>
-                </div>
-                <div class="flex flex-col h-full text-center">
+                </a>
+                <a href="#" class="flex flex-col h-full text-center">
                     <div class="flex items-center justify-center h-40">
-                        <div class="p-8 bg-white rounded-full">
-                            <img class="flex items-center justify-center h-16 text-center aspect-square"
-                                src="{{ asset('images/icons/mudanza.svg') }}" alt="images/icons/mudanza">
+                        <div class="relative p-6">
+                            <svg class="absolute top-1 left-1 z-[-1]" width="100%" height="auto" viewBox="0 0 222 222" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_1_3063)">
+                                <path d="M204.543 90.0568H177.171L198.385 68.848C193.558 57.2669 186.449 46.4167 177.02 36.9968C138.348 -1.66561 75.6516 -1.66561 36.9798 36.9968C13.3142 60.6568 4.1567 93.3081 9.45706 123.943H36.8286L15.6145 145.152C20.4485 156.733 27.5514 167.583 36.9798 177.003C75.6516 215.666 138.348 215.666 177.02 177.003C200.686 153.343 209.843 120.692 204.543 90.0568Z" fill="#FF008C"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_d_1_3063" x="0" y="0" width="222" height="222" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dx="4" dy="4"/>
+                                <feGaussianBlur stdDeviation="6"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_3063"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3063" result="shape"/>
+                                </filter>
+                                </defs>
+                            </svg>
+                            <div class="p-8 bg-white rounded-full">
+                                <img class="flex items-center justify-center h-16 text-center aspect-square"
+                                src="{{ asset('images/icons/mudanza.svg') }}" alt="mudanza">
+                            </div>
                         </div>
                     </div>
                     <h2 class="mt-4">Mudanza internacional</h2>
-                </div>
+                </a>
             </div>
         </div>
-        <div class="absolute left-0 right-0 bottom-0 w-4/5 bg-[#47108E] -z-10 h-[55%] mx-auto" ></div>
+        <div class="absolute left-0 right-0 bottom-0 max-w-[80%] lg:max-w-[1216px] bg-[#47108E] -z-10 h-[55%] mx-auto" ></div>
     </section>
     {{-- Comienza tu vida en --}}
     <section class="py-12 bg-white">
-        <div class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
+        <div id="conoce-argentina" class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
             <p class="mb-6 text-xl font-black text-center text-[#3C137C] lg:text-3xl">Comienza tu nueva vida en Argentina
             </p>
             <div class="grid gap-3 font-black text-white gap-y-6 lg:grid-cols-3">
@@ -262,7 +318,7 @@
                             </div>
                         </div>
                         <div class="flex items-center justify-center p-4 mt-auto">
-                            <a href="#" class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t ">
+                            <a href="{{ url('/salud/argentina') }}" class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t ">
                             Más información
                             </a>
                         </div>
@@ -277,7 +333,6 @@
             <div class="flex items-center flex-col justify-center bg-spotlight-pattern bg-[left_0%] lg:bg-[left_-24%] py-12 lg:py-0">
                 <img class="w-5/6" src="{{ asset('images/spotlight/spotlight-text.svg') }}" alt="">
             </div>
-
             <a href="{{ url('/desarrolla-tu-futuro/argentina#trabaja') }}" target="_blank" class="relative flex flex-col items-center justify-end isolate min-h-[300px]">
                 <p class="w-1/3 flex justify-center p-5 px-6 bg-[#3CEBA7]">Trabaja</p>
                 <img src="{{ asset('images/spotlight/trabaja.jpg') }}" alt="" class="absolute inset-0 object-cover w-full h-full -z-10">
@@ -291,7 +346,7 @@
     {{-- SANTANDER --}}
     <section class="py-12">
         <div class="max-w-screen-lg px-4 mx-auto my-auto sm:px-6 lg:px-8">
-            <div class="grid bg-[#402D97] lg:grid-cols-3">
+            <div class="grid bg-[#402D97] lg:grid-cols-3 mt-8">
                 <div class="relative col-span-2 overflow-hidden bg-cover bg-santander-pattern h-80 lg:overflow-visible">
                     <img class="absolute bottom-0 max-w-sm -right-[45%] lg:right-auto lg:-translate-x-1/2 lg:left-1/2" src="{{ asset('images/santander/santander-girl.png') }}" alt="santander">
                     <img class="absolute w-20 -translate-y-1/2 left-12 top-1/2" src="{{ asset('images/santander/santander-logo.svg') }}" alt="santander logo">
@@ -314,11 +369,11 @@
         <div class="max-w-screen-lg px-4 mx-auto my-auto sm:px-6 lg:px-8">
             <p class="mb-6 text-xl font-black text-center text-[#3C137C] lg:text-3xl">Te ayudamos a encontrar tu casa</p>
             <div class="flex justify-center gap-4 text-lg font-black text-white lg:text-2xl">
-                <a href="#" class="overflow-hidden rounded">
+                <a href="{{ url('/renta-en/argentina') }}" class="overflow-hidden rounded">
                     <img class="object-cover w-full" src="{{ asset('images/casa/renta.jpg') }}" alt="renta">
                     <p class="text-center w-full py-2 lg:py-4 bg-[#3C137C]">Renta</p>
                 </a>
-                <a href="#" class="overflow-hidden rounded">
+                <a href="{{ url('/venta-en/argentina') }}" class="overflow-hidden rounded">
                     <img class="object-cover w-full" src="{{ asset('images/casa/compra.jpg') }}" alt="compra">
                     <p class="text-center w-full py-2 lg:py-4 bg-[#3C137C]">Compra</p>
                 </a>
@@ -328,9 +383,7 @@
     <section class="pb-12">
         <div x-data="{ imgModal : false, imgModalSrc : '' }"
             class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
-            <p class="text-[#3C137C] font-black text-xl lg:text-3xl text-center mb-6">Explora la galería de fotos de
-                Argentina</p>
-
+            <p class="text-[#3C137C] font-black text-xl lg:text-3xl text-center mb-6">Explora la galería de fotos de Argentina</p>
 
             <div x-data="{
                 imageGalleryOpened: false,
@@ -361,7 +414,7 @@
             @keyup.right.window="imageGalleryNext();"
             @keyup.left.window="imageGalleryPrev();"
             class="w-full h-full select-none">
-            <div class="max-w-6xl mx-auto duration-1000 delay-300 opacity-0 select-none ease animate-fade-in-view" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+            <div class="w-full duration-1000 delay-300 opacity-0 select-none ease animate-fade-in-view" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
                 <div x-ref="gallery" id="gallery" class="grid grid-cols-[1fr_1fr_1fr_1fr_1fr] grid-rows-[1fr_1fr_1fr_1fr] gap-1 lg:gap-4 ">
                     <img @click="imageGalleryOpen"
                         class="cursor-pointer object-cover w-full h-full rounded [grid-area:1/1/2/3]"

@@ -282,9 +282,7 @@
     <section class="py-12">
         <div x-data="{ imgModal : false, imgModalSrc : '' }"
             class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
-            <p class="text-[#3C137C] font-black text-xl lg:text-3xl text-center mb-6">Explora la galería de fotos de
-                Argentina</p>
-
+            <p class="text-[#3C137C] font-black text-xl lg:text-3xl text-center mb-6">Explora la galería de fotos de Argentina</p>
 
             <div x-data="{
                 imageGalleryOpened: false,
@@ -315,7 +313,7 @@
             @keyup.right.window="imageGalleryNext();"
             @keyup.left.window="imageGalleryPrev();"
             class="w-full h-full select-none">
-            <div class="max-w-6xl mx-auto duration-1000 delay-300 opacity-0 select-none ease animate-fade-in-view" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+            <div class="w-full duration-1000 delay-300 opacity-0 select-none ease animate-fade-in-view" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
                 <div x-ref="gallery" id="gallery" class="grid grid-cols-[1fr_1fr_1fr_1fr_1fr] grid-rows-[1fr_1fr_1fr_1fr] gap-1 lg:gap-4 ">
                     <img @click="imageGalleryOpen"
                         class="cursor-pointer object-cover w-full h-full rounded [grid-area:1/1/2/3]"
@@ -388,10 +386,7 @@
                     </div>
                 </div>
             </template>
-
             </div>
-
-
         </div>
     </section>
 </x-app-layout>

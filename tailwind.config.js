@@ -25,6 +25,10 @@ export default {
                 'spotlight-pattern': "url('/public/images/spotlight/spotlight-pattern.svg')",
                 'santander-pattern': "url('/public/images/santander/bg-santander.svg')",
                 'desarrola-futuro': "url('/public/images/desarrolla-tu-futuro/bg.jpg')",
+                'renta': "url('/public/images/banners/banner-compra.jpg')",
+                'compra': "url('/public/images/banners/banner-renta.jpg')",
+                'salud': "url('/public/images/banners/banner-salud.jpg')",
+                'visado-documentacion': "url('/public/images/banners/banner-visado-documentacion.jpg')",
             }
 
         },

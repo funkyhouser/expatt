@@ -27,7 +27,15 @@
 
 
 <body class="min-h-screen font-sans antialiased text-[#636363]">
-    <div class="hidden lg:fixed lg:flex flex-col items-center text-[#BDBDBD] space-y-2 top-1/2 right-2 transform -translate-x-2 -translate-y-1/2">
+    {{-- max-width: 1280px;
+    left: 0;
+    right: -3rem;
+    margin: 0 auto;
+    width: 100%;
+    align-items: end;
+    top: calc(50% - 80px);
+    transform: translate(0, -50%) --}}
+    <div class="max-w-screen-xl left-0 hidden lg:fixed lg:flex flex-col items-end text-[#BDBDBD] mx-auto w-full space-y-2 top-1/2 right-0 transform -translate-y-1/2">
         <i class="fa-brands fa-facebook-f"></i>
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-linkedin-in"></i>
