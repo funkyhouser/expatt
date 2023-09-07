@@ -1,147 +1,292 @@
 <x-app-layout>
     <section class="min-h-[590px] lg:h-[590px] bg-[#47108E] bg-hero-pattern py-12">
         <div
-            class="grid items-center h-full max-w-screen-xl grid-cols-1 gap-4 px-4 mx-auto my-auto sm:px-6 lg:px-8 lg:grid-cols-2">
+            class="grid items-center h-full max-w-screen-xl grid-cols-1 gap-4 px-4 mx-auto my-auto sm:px-6 lg:px-8 lg:grid-cols-3">
             {{-- COL-1 --}}
             <div>
-                <h1 class="text-lg font-medium text-white lg:text-4xl">La comunidad de<br>expatriados más grande de<br>
+                <h1 class="text-lg font-medium text-white lg:text-3xl">La comunidad de<br>expatriados más grande de<br>
                 </h1>
-                <p class="text-[#25E59B] text-clamp font-black uppercase -mt-4 lg:-mt-8">latam</p>
+                <p class="text-[#25E59B] font-black uppercase -mt-4 lg:-mt-8" style="font-size: clamp(1rem, 20vw, 7rem)">latam</p>
             </div>
             {{-- COL-2 --}}
-            <section>
+            <section class="col-span-2 lg:pl-8">
                 <h2 class="mb-5 font-semibold text-white">¿Dónde te gustaría vivir?</h2>
-                <div class="grid gap-3 font-medium lg:grid-cols-2 text-[#272727]">
-                    {{-- COL 1 --}}
-                    <div class="flex flex-col space-y-4">
-                        {{-- Arg --}}
-                        <a href="{{ route('argentina') }}"
+                {{-- COL 1 --}}
+                <div class="grid grid-cols-2 gap-4 lg:grid-cols-3">
+                        <div class="flex flex-col space-y-4  font-medium text-xs text-[#272727]">
+                            {{-- Mex --}}
+                            <a href="#"
+                                class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/mexico.png') }}"
+                                        alt="Bandera MMéxico">
+                                    <span>México</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                            {{-- Arg --}}
+                            <a href="{{ route('argentina') }}"
+                                class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/argentina.png') }}"
+                                        alt="Bandera Argentina">
+                                    <span>Argentina</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                            {{-- España --}}
+                            <a href="#"
+                                class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/espana.png') }}"
+                                        alt="Bandera España">
+                                    <span>España</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                            {{-- Col --}}
+                            <a href="#"
+                                class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/colombia.png') }}"
+                                    alt="Bandera Colombia">
+                                    <span>Colombia</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                            {{-- Chile --}}
+                            <a href="#"
+                                class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/chile.png') }}"
+                                    alt="Bandera Chile">
+                                    <span>Chile</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                            {{-- Brasil --}}
+                            <a href="#"
+                                class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/brasil.png') }}"
+                                    alt="Bandera Brasil">
+                                    <span>Brasil</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                             {{-- Per --}}
+                             <a href="#"
+                             class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
+                             <div class="flex items-center p-3">
+                                 <img class="mr-2" src="{{ asset('images/flags/peru.png') }}"
+                                 alt="Bandera Perú">
+                                 <span>Perú</span>
+                             </div>
+                             <span
+                                 class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                 <i class="px-3 fa-solid fa-arrow-right"></i>
+                             </span>
+                         </a>
+                        </div>
+                        <div class="flex flex-col space-y-4 font-medium text-xs text-[#272727]">
+
+
+                            {{-- Republica Dominicana --}}
+                            <a href="#"
+                                class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/republica-dominicana.png') }}"
+                                    alt="Bandera Republica Dominicana">
+                                    <span>Dominicana</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                            {{-- Csota rica --}}
+                            <a href="#"
+                                class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/costa-rica.png') }}"
+                                    alt="Bandera Costa rica">
+                                    <span>Costa Rica</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                            {{-- Ecu --}}
+                            <a href="#"
                             class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
-                            <div class="flex items-center p-3">
-                                <img class="mr-2" src="{{ asset('images/flags/argentina.png') }}"
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/ecuador.png') }}"
                                     alt="Bandera Argentina">
-                                <span>Argentina</span>
-                            </div>
-                            <span
-                                class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
-                                <i class="px-3 fa-solid fa-arrow-right"></i>
-                            </span>
-                        </a>
-                        {{-- Bol --}}
-                        <a href="#"
+                                    <span>Ecuador</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                            {{-- Panama --}}
+                            <a href="#"
+                                class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/panama.png') }}"
+                                    alt="Bandera panama">
+                                    <span>Panama</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                            {{-- Par --}}
+                            <a href="#"
+                                class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/paraguay.png') }}"
+                                    alt="Bandera Paraguay">
+                                    <span>Paraguay</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                            {{-- Puerto Rico --}}
+                            <a href="#"
+                                class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/puerto-rico.png') }}"
+                                    alt="Bandera Puerto Rico">
+                                    <span>Puerto Rico</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                            {{-- Uruguay --}}
+                            <a href="#"
+                                class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/uruguay.png') }}"
+                                    alt="Bandera uruguay">
+                                    <span>Uruguay</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="flex flex-col space-y-4 font-medium text-xs text-[#272727]">
+
+                            {{-- Venezuela --}}
+                            <a href="#"
+                                class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/venezuela.png') }}"
+                                    alt="Bandera Venezuela">
+                                    <span>Venezuela</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                            {{-- Guatemala --}}
+                            <a href="#"
+                                class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/guatemala.png') }}"
+                                    alt="Bandera Guatemala">
+                                    <span>Guatemala</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                            {{-- Nicaragua --}}
+                            <a href="#"
+                                class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/nicaragua.png') }}"
+                                    alt="Bandera Nicaragua">
+                                    <span>Nicaragua</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                            {{-- El Salvador --}}
+                            <a href="#"
+                                class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/el-salvador.png') }}"
+                                    alt="Bandera El Salvador">
+                                    <span>El Salvador</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                            {{-- Hoduras--}}
+                            <a href="#"
+                                class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/honduras.png') }}"
+                                    alt="Bandera Hodhonduras">
+                                    <span>Honduras</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                            {{-- Cuba--}}
+                            <a href="#"
                             class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
-                            <div class="flex items-center p-3">
-                                <img class="mr-2" src="{{ asset('images/flags/bolivia.png') }}" alt="Bandera Bolivia">
-                                <span>Bolivia</span>
-                            </div>
-                            <span
-                                class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
-                                <i class="px-3 fa-solid fa-arrow-right"></i>
-                            </span>
-                        </a>
-                        {{-- Brasil --}}
-                        <a href="#"
-                            class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
-                            <div class="flex items-center p-3">
-                                <img class="mr-2" src="{{ asset('images/flags/brasil.png') }}" alt="Bandera Brasil">
-                                <span>Brasil</span>
-                            </div>
-                            <span
-                                class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
-                                <i class="px-3 fa-solid fa-arrow-right"></i>
-                            </span>
-                        </a>
-                        {{-- Chile --}}
-                        <a href="#"
-                            class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
-                            <div class="flex items-center p-3">
-                                <img class="mr-2" src="{{ asset('images/flags/chile.png') }}" alt="Bandera Chile">
-                                <span>Chile</span>
-                            </div>
-                            <span
-                                class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
-                                <i class="px-3 fa-solid fa-arrow-right"></i>
-                            </span>
-                        </a>
-                        {{-- Col --}}
-                        <a href="#"
-                            class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
-                            <div class="flex items-center p-3">
-                                <img class="mr-2" src="{{ asset('images/flags/colombia.png') }}" alt="Bandera Colombia">
-                                <span>Colombia</span>
-                            </div>
-                            <span
-                                class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
-                                <i class="px-3 fa-solid fa-arrow-right"></i>
-                            </span>
-                        </a>
-                    </div>
-                    {{-- COL 2 --}}
-                    <div class="flex flex-col space-y-4">
-                        {{-- Ecu --}}
-                        <a href="#"
-                            class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
-                            <div class="flex items-center p-3">
-                                <img class="mr-2" src="{{ asset('images/flags/ecuador.png') }}" alt="Bandera Argentina">
-                                <span>Ecuador</span>
-                            </div>
-                            <span
-                                class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
-                                <i class="px-3 fa-solid fa-arrow-right"></i>
-                            </span>
-                        </a>
-                        {{-- Ecu --}}
-                        <a href="#"
-                            class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
-                            <div class="flex items-center p-3">
-                                <img class="mr-2" src="{{ asset('images/flags/mexico.png') }}" alt="Bandera Argentina">
-                                <span>México</span>
-                            </div>
-                            <span
-                                class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
-                                <i class="px-3 fa-solid fa-arrow-right"></i>
-                            </span>
-                        </a>
-                        {{-- Par --}}
-                        <a href="#"
-                            class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
-                            <div class="flex items-center p-3">
-                                <img class="mr-2" src="{{ asset('images/flags/paraguay.png') }}" alt="Bandera Paraguay">
-                                <span>Paraguay</span>
-                            </div>
-                            <span
-                                class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
-                                <i class="px-3 fa-solid fa-arrow-right"></i>
-                            </span>
-                        </a>
-                        {{-- Per --}}
-                        <a href="#"
-                            class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
-                            <div class="flex items-center p-3">
-                                <img class="mr-2" src="{{ asset('images/flags/peru.png') }}" alt="Bandera Perú">
-                                <span>Perú</span>
-                            </div>
-                            <span
-                                class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
-                                <i class="px-3 fa-solid fa-arrow-right"></i>
-                            </span>
-                        </a>
-                        {{-- Otro --}}
-                        <a href="#"
-                            class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
-                            <div class="flex items-center p-3">
-                                <img class="mr-2" src="{{ asset('images/flags/otros.png') }}" alt="Bandera Otros">
-                                <span>Otros</span>
-                            </div>
-                            <span
-                                class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
-                                <i class="px-3 fa-solid fa-arrow-right"></i>
-                            </span>
-                        </a>
+                                <div class="flex items-center p-3">
+                                    <img class="mr-2" src="{{ asset('images/flags/cuba.png') }}"
+                                    alt="Bandera Cuba">
+                                    <span>Cuba</span>
+                                </div>
+                                <span
+                                    class="group-hover/dondevivir:bg-gray-200 ease-in-out transition-all flex items-center justify-center h-full w-12 bg-gray-50 rounded-l-[60px] text-[#47108E]">
+                                    <i class="px-3 fa-solid fa-arrow-right"></i>
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
+
     </section>
     <section class="bg-[#F9F9F9] py-12">
         <div class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
@@ -163,7 +308,7 @@
                             velit cum nemo error, eveniet laborum autem! Facere non vero aperiam aliquam ut nihil, ea in
                             iusto libero eos doloribus? Animi, nam.</p>
                         <div class="flex flex-wrap pt-3 mt-auto">
-                            <a href="#" target="_blank"
+                            <a href="{{ url('/argentina/los-beneficios-de-ser-un-expatriado-en-argentina') }}"
                                 class="font-black text-[#3C137C] mb-2 mr-2 border-b-4 border-[#25E59B]">Leer más</a>
                         </div>
                     </div>
@@ -185,7 +330,7 @@
                             velit cum nemo error, eveniet laborum autem! Facere non vero aperiam aliquam ut nihil, ea in
                             iusto libero eos doloribus? Animi, nam.</p>
                         <div class="flex flex-wrap pt-3 mt-auto">
-                            <a href="#" target="_blank"
+                            <a href="{{ url('/argentina/los-beneficios-de-ser-un-expatriado-en-argentina') }}"
                                 class="font-black text-[#3C137C] mb-2 mr-2 border-b-4 border-[#25E59B]">Leer más</a>
                         </div>
                     </div>
@@ -207,7 +352,7 @@
                             velit cum nemo error, eveniet laborum autem! Facere non vero aperiam aliquam ut nihil, ea in
                             iusto libero eos doloribus? Animi, nam.</p>
                         <div class="flex flex-wrap pt-3 mt-auto">
-                            <a href="#" target="_blank"
+                            <a href="{{ url('/argentina/los-beneficios-de-ser-un-expatriado-en-argentina') }}"
                                 class="font-black text-[#3C137C] mb-2 mr-2 border-b-4 border-[#25E59B]">Leer más</a>
                         </div>
                     </div>

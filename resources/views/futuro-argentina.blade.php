@@ -1,6 +1,6 @@
 <x-app-layout>
     {{-- HERO --}}
-    <section class="min-h-[500px] h-[500px] lg:h-[630px] bg-desarrola-futuro bg-no-repeat bg-center bg-cover">
+    <section class="min-h-[350px] h-[400px] bg-desarrola-futuro bg-no-repeat bg-center bg-cover">
         <div class="flex flex-col justify-end h-full max-w-screen-lg px-4 pb-16 mx-auto my-auto sm:px-6 lg:px-8">
             <h1 class="text-4xl font-black text-white uppercase lg:text-7xl leading-[.9_!important]">
                 Desarrolla<br>

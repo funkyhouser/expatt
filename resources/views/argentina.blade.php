@@ -53,7 +53,7 @@
                     </div>
                     <h2 class="mt-4">Visado y documentación</h2>
                 </a>
-                <a href="#" class="flex flex-col h-full text-center">
+                <a href="{{ url('/impuestos-extranjeros/argentina') }}" class="flex flex-col h-full text-center">
                     <div class="flex items-center justify-center h-40">
                         <div class="relative p-6">
                             <svg class="absolute top-1 left-1 z-[-1]" width="100%" height="auto" viewBox="0 0 222 222" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -147,7 +147,7 @@
                             </div>
                         </div>
                         <div class="flex items-center justify-center p-4 mt-auto">
-                            <a href="#" class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t ">
+                            <a href="{{ url('/mudarse/argentina') }}" class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t ">
                             Más información
                             </a>
                         </div>
@@ -181,7 +181,7 @@
                             </div>
                         </div>
                         <div class="flex items-center justify-center p-4 mt-auto">
-                            <a href="#" class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t ">
+                            <a href="{{ url('/vivir/argentina') }}" class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t ">
                             Más información
                             </a>
                         </div>
@@ -215,7 +215,7 @@
                             </div>
                         </div>
                         <div class="flex items-center justify-center p-4 mt-auto">
-                            <a href="#" class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t ">
+                            <a href="{{ url('/educacion/argentina') }}" class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t ">
                             Más información
                             </a>
                         </div>
@@ -250,7 +250,7 @@
                             </div>
                         </div>
                         <div class="flex items-center justify-center p-4 mt-auto">
-                            <a href="#" class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t ">
+                            <a href="{{ url('/desarrolla-tu-futuro/argentina#trabaja') }}" class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t ">
                             Más información
                             </a>
                         </div>
@@ -284,7 +284,7 @@
                             </div>
                         </div>
                         <div class="flex items-center justify-center p-4 mt-auto">
-                            <a href="#" class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t ">
+                            <a href="{{ url('/finanzas-economia/argentina') }}" class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t ">
                             Más información
                             </a>
                         </div>
@@ -293,8 +293,8 @@
                 <div class="flex flex-col overflow-hidden bg-white rounded drop-shadow-md">
                     <p class="text-center py-3 text-2xl font-black text-white bg-[#47108E]">Salud</p>
                     <div class="h-60">
-                        <img class="object-cover w-full h-full" src="{{ asset('images/argentina/educacion.jpg') }}"
-                            alt="educacion">
+                        <img class="object-cover w-full h-full" src="{{ asset('images/argentina/salud.jpg') }}"
+                            alt="salud">
                     </div>
                     <div class="flex flex-col h-full p-3 bg-[#F9F9F9]">
                         <div class="divide-y divide-gray-100">
@@ -333,11 +333,11 @@
             <div class="flex items-center flex-col justify-center bg-spotlight-pattern bg-[left_0%] lg:bg-[left_-24%] py-12 lg:py-0">
                 <img class="w-5/6" src="{{ asset('images/spotlight/spotlight-text.svg') }}" alt="">
             </div>
-            <a href="{{ url('/desarrolla-tu-futuro/argentina#trabaja') }}" target="_blank" class="relative flex flex-col items-center justify-end isolate min-h-[300px]">
+            <a href="{{ url('/desarrolla-tu-futuro/argentina#trabaja') }}" class="relative flex flex-col items-center justify-end isolate min-h-[300px]">
                 <p class="w-1/3 flex justify-center p-5 px-6 bg-[#3CEBA7]">Trabaja</p>
                 <img src="{{ asset('images/spotlight/trabaja.jpg') }}" alt="" class="absolute inset-0 object-cover w-full h-full -z-10">
             </a>
-            <a href="{{ url('/desarrolla-tu-futuro/argentina#estudia') }}" target="_blank" class="relative flex flex-col items-center justify-end isolate min-h-[300px]">
+            <a href="{{ url('/desarrolla-tu-futuro/argentina#estudia') }}" class="relative flex flex-col items-center justify-end isolate min-h-[300px]">
                 <p class="w-1/3 flex justify-center p-5 px-6 bg-[#3CEBA7]">Estudia</p>
                 <img src="{{ asset('images/spotlight/estudia.jpg') }}" alt="" class="absolute inset-0 object-cover w-full h-full -z-10">
             </a>

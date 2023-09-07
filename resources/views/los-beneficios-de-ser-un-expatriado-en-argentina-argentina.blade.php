@@ -3,7 +3,7 @@
     <section class="min-h-[350px] h-[400px] bg-renta bg-no-repeat bg-center bg-cover">
         <div class="flex flex-col justify-end h-full max-w-screen-lg px-4 pb-16 mx-auto my-auto sm:px-6 lg:px-8">
             <h1 class="text-4xl font-black text-white uppercase lg:text-7xl leading-[.9_!important]">
-                Te ayudamos a<br>encontrar tu casa
+                Los beneficios de ser un expatriado en Argentina
             </h1>
         </div>
     </section>
@@ -13,9 +13,6 @@
         <div class="max-w-screen-lg px-4 mx-auto my-auto sm:px-6 lg:px-8">
             <article id="trabaja" class="grid grid-cols-5 gap-4">
                 <div class="col-span-5 lg:col-span-4">
-                    <h2 class="mb-6 text-xl font-black text-[#3C137C] lg:text-4xl">
-                        Renta
-                    </h2>
                     <p class="mb-4">
                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel metus felis. Nam eleifend eu magna vitae fermentum. Etiam orci justo, egestas et sagittis et, tincidunt sed urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel metus felis. Nam eleifend eu magna vitae fermentum. Etiam orci justo, egestas et sagittis et, tincidunt sed urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel metus felis. Nam eleifend eu magna vitae fermentum. Etiam orci justo, egestas et sagittis et, tincidunt sed urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel metus felis. Nam eleifend eu magna vitae fermentum. Etiam orci justo, egestas et sagittis et, tincidunt sed urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel metus felis. Nam eleifend eu magna vitae fermentum. Etiam orci justo, egestas et sagittis et, tincidunt sed urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel metus felis. Nam eleifend eu magna vitae fermentum. Etiam orci justo, egestas et sagittis et, tincidunt sed urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel metus felis. Nam eleifend eu magna vitae fermentum. Etiam orci justo, egestas et sagittis et, tincidunt sed urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel metus felis. Nam eleifend eu magna vitae fermentum. Etiam orci justo, egestas et sagittis et, tincidunt sed urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel metus felis. Nam eleifend eu magna vitae fermentum. Etiam orci justo, egestas et sagittis et, tincidunt sed urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel metus felis. Nam eleifend eu magna vitae fermentum. Etiam orci justo, egestas et sagittis et, tincidunt sed urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel metus felis. Nam eleifend eu magna vitae fermentum. Etiam orci justo, egestas et sagittis et, tincidunt sed urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel metus felis. Nam eleifend eu magna vitae fermentum. Etiam orci justo, egestas et sagittis et, tincidunt sed urna.
                     </p>

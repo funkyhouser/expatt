@@ -29,6 +29,12 @@ export default {
                 'compra': "url('/public/images/banners/banner-renta.jpg')",
                 'salud': "url('/public/images/banners/banner-salud.jpg')",
                 'visado-documentacion': "url('/public/images/banners/banner-visado-documentacion.jpg')",
+                'impuestos': "url('/public/images/banners/impuestos-para-extranjeros.jpg')",
+                'mudarse': "url('/public/images/banners/mudarse-a-argentina.jpg')",
+                'vivir': "url('/public/images/banners/vivir-en-argentina.jpg')",
+                'educacion': "url('/public/images/banners/educacion.jpg')",
+                'trabajar': "url('/public/images/banners/trabajar-en-argentina.jpg')",
+                'finanzas': "url('/public/images/banners/finanzas-y-economia.jpg')",
             }
 
         },

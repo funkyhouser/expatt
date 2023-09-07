@@ -16,9 +16,6 @@
             <x-nav-link href="#" :active="request()->routeIs('dashboard')">
                 Quiénes Somos
             </x-nav-link>
-            <x-nav-link href="#" :active="request()->routeIs('dashboard')">
-                Nuestra App
-            </x-nav-link>
             <x-nav-link href="#" :active="request()->routeIs('dashboard')" class="pr-0">
                 Conviértete en Sponsor
             </x-nav-link>
