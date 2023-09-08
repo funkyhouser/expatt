@@ -29,13 +29,13 @@
 <body class="min-h-screen font-sans antialiased text-[#636363]">
 
     <div class="z-50 flex-col hidden transform -translate-y-1/2 right-5 lg:fixed lg:flex top-1/2">
-        <div class="flex flex-col items-center px-2 py-4 space-y-3 text-white bg-black/25 rounded-2xl">
-          <i class="fa-brands fa-facebook-f"></i>
-         <i class="fa-brands fa-instagram"></i>
-         <i class="fa-brands fa-linkedin-in"></i>
-         <i class="fa-brands fa-x-twitter"></i>
-         <i class="fa-brands fa-youtube"></i>
-         <i class="fa-brands fa-tiktok"></i>
+        <div class="flex flex-col items-center px-2 py-4 space-y-4 text-white bg-black/25 rounded-2xl">
+            <i class="cursor-pointer fa-brands fa-facebook-f"></i>
+            <i class="cursor-pointer fa-brands fa-instagram"></i>
+            <i class="cursor-pointer fa-brands fa-linkedin-in"></i>
+            <i class="cursor-pointer fa-brands fa-x-twitter"></i>
+            <i class="cursor-pointer fa-brands fa-youtube"></i>
+            <i class="cursor-pointer fa-brands fa-tiktok"></i>
      </div>    </div>
     {{-- <x-banner /> --}}
 

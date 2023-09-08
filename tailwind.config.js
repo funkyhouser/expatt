@@ -36,7 +36,6 @@ export default {
                 'trabajar': "url('/public/images/banners/trabajar-en-argentina.jpg')",
                 'finanzas': "url('/public/images/banners/finanzas-y-economia.jpg')",
             }
-
         },
     },
 

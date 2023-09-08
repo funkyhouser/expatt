@@ -13,7 +13,7 @@
                     expatriado con el pie correcto: su cultura e identidad, cuáles son las mejores ciudades para vivir y mucho más.</p>
                 <div class="flex text-center">
                     <a href="#conoce-argentina"
-                        class="text-[#47108E] font-bold py-3 w-full lg:w-1/3 border-b-2 border-[#3CEBA7] bg-white rounded-t">
+                        class="text-[#47108E] font-bold py-3 w-full lg:w-1/3 border-b-2 border-[#3CEBA7] bg-white hover:bg-[#3CEBA7] transition  rounded-t">
                         Conoce Argentina
                     </a>
                 </div>
@@ -27,8 +27,8 @@
             <div class="grid gap-6 font-black text-white lg:grid-cols-3">
                 <a href="{{ url('/visado-documentacion/argentina') }}" class="flex flex-col h-full text-center">
                     <div class="flex items-center justify-center h-40">
-                        <div class="relative p-6">
-                            <svg class="absolute top-1 left-1 z-[-1]" width="100%" height="auto" viewBox="0 0 222 222" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="relative p-6 group/escala">
+                            <svg class=" absolute top-1 left-1 z-[-1]" width="100%" height="auto" viewBox="0 0 222 222" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g filter="url(#filter0_d_1_3063)">
                                 <path d="M204.543 90.0568H177.171L198.385 68.848C193.558 57.2669 186.449 46.4167 177.02 36.9968C138.348 -1.66561 75.6516 -1.66561 36.9798 36.9968C13.3142 60.6568 4.1567 93.3081 9.45706 123.943H36.8286L15.6145 145.152C20.4485 156.733 27.5514 167.583 36.9798 177.003C75.6516 215.666 138.348 215.666 177.02 177.003C200.686 153.343 209.843 120.692 204.543 90.0568Z" fill="#00BDFF"/>
                                 </g>
@@ -46,16 +46,16 @@
                                 </defs>
                             </svg>
                             <div class="p-8 bg-white rounded-full">
-                                <img class="flex items-center justify-center h-16 text-center aspect-square"
+                                <img class="flex items-center justify-center h-16 text-center transition scale-100 group-hover/escala:scale-110 aspect-square"
                                 src="{{ asset('images/icons/documentacion.svg') }}" alt="documentacion">
                             </div>
                         </div>
                     </div>
-                    <h2 class="mt-4">Visado y documentación</h2>
+                    <h2 class="mt-4 hover:animate-jump">Visado y documentación</h2>
                 </a>
                 <a href="{{ url('/impuestos-extranjeros/argentina') }}" class="flex flex-col h-full text-center">
                     <div class="flex items-center justify-center h-40">
-                        <div class="relative p-6">
+                        <div class="relative p-6 group/escala">
                             <svg class="absolute top-1 left-1 z-[-1]" width="100%" height="auto" viewBox="0 0 222 222" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g filter="url(#filter0_d_1_3063)">
                                 <path d="M204.543 90.0568H177.171L198.385 68.848C193.558 57.2669 186.449 46.4167 177.02 36.9968C138.348 -1.66561 75.6516 -1.66561 36.9798 36.9968C13.3142 60.6568 4.1567 93.3081 9.45706 123.943H36.8286L15.6145 145.152C20.4485 156.733 27.5514 167.583 36.9798 177.003C75.6516 215.666 138.348 215.666 177.02 177.003C200.686 153.343 209.843 120.692 204.543 90.0568Z" fill="#FF7300"/>
@@ -74,7 +74,7 @@
                                 </defs>
                             </svg>
                             <div class="p-8 bg-white rounded-full">
-                                <img class="flex items-center justify-center h-16 text-center aspect-square"
+                                <img class="flex items-center justify-center h-16 text-center transition scale-100 group-hover/escala:scale-110 aspect-square"
                                 src="{{ asset('images/icons/impuestos.svg') }}" alt="impuestos">
                             </div>
                         </div>
@@ -83,7 +83,7 @@
                 </a>
                 <a href="#" class="flex flex-col h-full text-center">
                     <div class="flex items-center justify-center h-40">
-                        <div class="relative p-6">
+                        <div class="relative p-6 group/escala">
                             <svg class="absolute top-1 left-1 z-[-1]" width="100%" height="auto" viewBox="0 0 222 222" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g filter="url(#filter0_d_1_3063)">
                                 <path d="M204.543 90.0568H177.171L198.385 68.848C193.558 57.2669 186.449 46.4167 177.02 36.9968C138.348 -1.66561 75.6516 -1.66561 36.9798 36.9968C13.3142 60.6568 4.1567 93.3081 9.45706 123.943H36.8286L15.6145 145.152C20.4485 156.733 27.5514 167.583 36.9798 177.003C75.6516 215.666 138.348 215.666 177.02 177.003C200.686 153.343 209.843 120.692 204.543 90.0568Z" fill="#FF008C"/>
@@ -102,7 +102,7 @@
                                 </defs>
                             </svg>
                             <div class="p-8 bg-white rounded-full">
-                                <img class="flex items-center justify-center h-16 text-center aspect-square"
+                                <img class="flex items-center justify-center h-16 text-center transition scale-100 group-hover/escala:scale-110 aspect-square"
                                 src="{{ asset('images/icons/mudanza.svg') }}" alt="mudanza">
                             </div>
                         </div>
@@ -128,19 +128,19 @@
                     <div class="flex flex-col h-full p-3 bg-[#F9F9F9]">
                         <div class="divide-y divide-gray-100">
                             <div class="flex justify-between px-4 py-2 sm:gap-4 sm:px-0">
-                                <p class="text-sm font-medium leading-6 text-gray-900">Vuelos a Argentina</p>
+                                <p class="cursor-pointer hover:translate-x-2.5 transition text-sm font-medium leading-6 text-gray-900">Vuelos a Argentina</p>
                                 <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                     <i class="px-3 fa-solid fa-arrow-right"></i>
                                 </p>
                             </div>
                             <div class="flex justify-between px-4 py-2 sm:gap-4 sm:px-0">
-                                <p class="text-sm font-medium leading-6 text-gray-900">Visados y ciudadanías</p>
+                                <p class="cursor-pointer hover:translate-x-2.5 transition text-sm font-medium leading-6 text-gray-900">Visados y ciudadanías</p>
                                 <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                     <i class="px-3 fa-solid fa-arrow-right"></i>
                                 </p>
                             </div>
                             <div class="flex justify-between px-4 py-2 sm:gap-4 sm:px-0">
-                                <p class="text-sm font-medium leading-6 text-gray-900">Las mejores ciudades para vivir en Argentina</p>
+                                <p class="cursor-pointer hover:translate-x-2.5 transition text-sm font-medium leading-6 text-gray-900">Las mejores ciudades para vivir en Argentina</p>
                                 <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                     <i class="px-3 fa-solid fa-arrow-right"></i>
                                 </p>
@@ -162,19 +162,19 @@
                     <div class="flex flex-col h-full p-3 bg-[#F9F9F9]">
                         <div class="divide-y divide-gray-100">
                             <div class="flex justify-between px-4 py-2 sm:gap-4 sm:px-0">
-                                <p class="text-sm font-medium leading-6 text-gray-900">Proveedores de telefonía e internet</p>
+                                <p class="cursor-pointer hover:translate-x-2.5 transition text-sm font-medium leading-6 text-gray-900">Proveedores de telefonía e internet</p>
                                 <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                     <i class="px-3 fa-solid fa-arrow-right"></i>
                                 </p>
                             </div>
                             <div class="flex justify-between px-4 py-2 sm:gap-4 sm:px-0">
-                                <p class="text-sm font-medium leading-6 text-gray-900">Compra un automóvil</p>
+                                <p class="cursor-pointer hover:translate-x-2.5 transition text-sm font-medium leading-6 text-gray-900">Compra un automóvil</p>
                                 <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                     <i class="px-3 fa-solid fa-arrow-right"></i>
                                 </p>
                             </div>
                             <div class="flex justify-between px-4 py-2 sm:gap-4 sm:px-0">
-                                <p class="text-sm font-medium leading-6 text-gray-900">Fletes y mudanzas</p>
+                                <p class="cursor-pointer hover:translate-x-2.5 transition text-sm font-medium leading-6 text-gray-900">Fletes y mudanzas</p>
                                 <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                     <i class="px-3 fa-solid fa-arrow-right"></i>
                                 </p>
@@ -196,19 +196,19 @@
                     <div class="flex flex-col h-full p-3 bg-[#F9F9F9]">
                         <div class="divide-y divide-gray-100">
                             <div class="flex justify-between px-4 py-2 sm:gap-4 sm:px-0">
-                                <p class="text-sm font-medium leading-6 text-gray-900">Estudiar en Argentina</p>
+                                <p class="cursor-pointer hover:translate-x-2.5 transition text-sm font-medium leading-6 text-gray-900">Estudiar en Argentina</p>
                                 <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                     <i class="px-3 fa-solid fa-arrow-right"></i>
                                 </p>
                             </div>
                             <div class="flex justify-between px-4 py-2 sm:gap-4 sm:px-0">
-                                <p class="text-sm font-medium leading-6 text-gray-900">Escuelas y universidades</p>
+                                <p class="cursor-pointer hover:translate-x-2.5 transition text-sm font-medium leading-6 text-gray-900">Escuelas y universidades</p>
                                 <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                     <i class="px-3 fa-solid fa-arrow-right"></i>
                                 </p>
                             </div>
                             <div class="flex justify-between px-4 py-2 sm:gap-4 sm:px-0">
-                                <p class="text-sm font-medium leading-6 text-gray-900">Aprender español</p>
+                                <p class="cursor-pointer hover:translate-x-2.5 transition text-sm font-medium leading-6 text-gray-900">Aprender español</p>
                                 <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                     <i class="px-3 fa-solid fa-arrow-right"></i>
                                 </p>
@@ -231,19 +231,19 @@
                     <div class="flex flex-col h-full p-3 bg-[#F9F9F9]">
                         <div class="divide-y divide-gray-100">
                             <div class="flex justify-between px-4 py-2 sm:gap-4 sm:px-0">
-                                <p class="text-sm font-medium leading-6 text-gray-900">Buscar trabajos en Argentina</p>
+                                <p class="cursor-pointer hover:translate-x-2.5 transition text-sm font-medium leading-6 text-gray-900">Buscar trabajos en Argentina</p>
                                 <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                     <i class="px-3 fa-solid fa-arrow-right"></i>
                                 </p>
                             </div>
                             <div class="flex justify-between px-4 py-2 sm:gap-4 sm:px-0">
-                                <p class="text-sm font-medium leading-6 text-gray-900">Impuestos para autónomos y monotributistas en Argentina</p>
+                                <p class="cursor-pointer hover:translate-x-2.5 transition text-sm font-medium leading-6 text-gray-900">Impuestos para autónomos y monotributistas en Argentina</p>
                                 <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                     <i class="px-3 fa-solid fa-arrow-right"></i>
                                 </p>
                             </div>
                             <div class="flex justify-between px-4 py-2 sm:gap-4 sm:px-0">
-                                <p class="text-sm font-medium leading-6 text-gray-900">Comienza tu emprendimiento</p>
+                                <p class="cursor-pointer hover:translate-x-2.5 transition text-sm font-medium leading-6 text-gray-900">Comienza tu emprendimiento</p>
                                 <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                     <i class="px-3 fa-solid fa-arrow-right"></i>
                                 </p>
@@ -265,19 +265,19 @@
                     <div class="flex flex-col h-full p-3 bg-[#F9F9F9]">
                         <div class="divide-y divide-gray-100">
                             <div class="flex justify-between px-4 py-2 sm:gap-4 sm:px-0">
-                                <p class="text-sm font-medium leading-6 text-gray-900">Cómo abrir una cuenta bancaria</p>
+                                <p class="cursor-pointer hover:translate-x-2.5 transition text-sm font-medium leading-6 text-gray-900">Cómo abrir una cuenta bancaria</p>
                                 <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                     <i class="px-3 fa-solid fa-arrow-right"></i>
                                 </p>
                             </div>
                             <div class="flex justify-between px-4 py-2 sm:gap-4 sm:px-0">
-                                <p class="text-sm font-medium leading-6 text-gray-900">Seguros en Argentina</p>
+                                <p class="cursor-pointer hover:translate-x-2.5 transition text-sm font-medium leading-6 text-gray-900">Seguros en Argentina</p>
                                 <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                     <i class="px-3 fa-solid fa-arrow-right"></i>
                                 </p>
                             </div>
                             <div class="flex justify-between px-4 py-2 sm:gap-4 sm:px-0">
-                                <p class="text-sm font-medium leading-6 text-gray-900">Sistema de impuestos en Argentina</p>
+                                <p class="cursor-pointer hover:translate-x-2.5 transition text-sm font-medium leading-6 text-gray-900">Sistema de impuestos en Argentina</p>
                                 <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                     <i class="px-3 fa-solid fa-arrow-right"></i>
                                 </p>
@@ -299,19 +299,19 @@
                     <div class="flex flex-col h-full p-3 bg-[#F9F9F9]">
                         <div class="divide-y divide-gray-100">
                             <div class="flex justify-between px-4 py-2 sm:gap-4 sm:px-0">
-                                <p class="text-sm font-medium leading-6 text-gray-900">Seguros médicos para expatriados</p>
+                                <p class="cursor-pointer hover:translate-x-2.5 transition text-sm font-medium leading-6 text-gray-900">Seguros médicos para expatriados</p>
                                 <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                     <i class="px-3 fa-solid fa-arrow-right"></i>
                                 </p>
                             </div>
                             <div class="flex justify-between px-4 py-2 sm:gap-4 sm:px-0">
-                                <p class="text-sm font-medium leading-6 text-gray-900">Conseguir cobertura médica</p>
+                                <p class="cursor-pointer hover:translate-x-2.5 transition text-sm font-medium leading-6 text-gray-900">Conseguir cobertura médica</p>
                                 <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                     <i class="px-3 fa-solid fa-arrow-right"></i>
                                 </p>
                             </div>
                             <div class="flex justify-between px-4 py-2 sm:gap-4 sm:px-0">
-                                <p class="text-sm font-medium leading-6 text-gray-900">Hospitales gratuitos en Argentina</p>
+                                <p class="cursor-pointer hover:translate-x-2.5 transition text-sm font-medium leading-6 text-gray-900">Hospitales gratuitos en Argentina</p>
                                 <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                     <i class="px-3 fa-solid fa-arrow-right"></i>
                                 </p>
@@ -334,11 +334,11 @@
                 <img class="w-5/6" src="{{ asset('images/spotlight/spotlight-text.svg') }}" alt="">
             </div>
             <a href="{{ url('/desarrolla-tu-futuro/argentina#trabaja') }}" class="relative flex flex-col items-center justify-end isolate min-h-[300px]">
-                <p class="w-1/3 flex justify-center p-5 px-6 bg-[#3CEBA7]">Trabaja</p>
+                <p class="w-1/3 flex justify-center p-5 px-6 bg-[#3CEBA7] hover:bg-white transition hover:text-[#3CEBA7]">Trabaja</p>
                 <img src="{{ asset('images/spotlight/trabaja.jpg') }}" alt="" class="absolute inset-0 object-cover w-full h-full -z-10">
             </a>
             <a href="{{ url('/desarrolla-tu-futuro/argentina#estudia') }}" class="relative flex flex-col items-center justify-end isolate min-h-[300px]">
-                <p class="w-1/3 flex justify-center p-5 px-6 bg-[#3CEBA7]">Estudia</p>
+                <p class="w-1/3 flex justify-center p-5 px-6 bg-[#3CEBA7] hover:bg-white transition hover:text-[#3CEBA7]">Estudia</p>
                 <img src="{{ asset('images/spotlight/estudia.jpg') }}" alt="" class="absolute inset-0 object-cover w-full h-full -z-10">
             </a>
         </div>
@@ -356,7 +356,7 @@
                     <p class="text-[#F9F9F9] mb-4 leading-4">Obtén tu tarjeta de débito ahora y empieza a disfrutar ahorros y promociones increíbles en tus compras.</p>
                     <div class="flex text-center">
                         <a href="#"
-                            class="text-[#47108E] font-bold py-3 w-full lg:w-3/5  border-b-2 border-[#3CEBA7] bg-white rounded-t">
+                            class="text-[#47108E] font-bold py-3 w-full lg:w-3/5  border-b-2 border-[#3CEBA7] bg-white hover:bg-[#3CEBA7] transition rounded-t">
                             ¡Pedila ahora!
                         </a>
                     </div>

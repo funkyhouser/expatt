@@ -318,7 +318,7 @@
         <div class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
             <p class="text-[#3C137C] font-black text-xl lg:text-3xl text-center mb-6">Destacado del mes: Argentina</p>
             <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
-                <div class="flex flex-col overflow-hidden bg-white rounded">
+                <div class="flex flex-col overflow-hidden bg-white rounded hover:shadow-md">
                     <div class="relative h-60">
                         <img class="object-cover w-full" src="{{ asset('images/destacado/1.jpg') }}" alt="">
                         <img class="absolute right-0 p-2 rounded-l-[4px] top-8 bg-white"
@@ -340,7 +340,7 @@
                     </div>
                 </div>
                 {{-- --}}
-                <div class="flex flex-col overflow-hidden bg-white rounded">
+                <div class="flex flex-col overflow-hidden bg-white rounded hover:shadow-md">
                     <div class="relative h-60">
                         <img class="object-cover w-full" src="{{ asset('images/destacado/2.jpg') }}" alt="">
                         <img class="absolute right-0 p-2 rounded-l-[4px] top-8 bg-white"
@@ -362,7 +362,7 @@
                     </div>
                 </div>
                 {{-- --}}
-                <div class="flex flex-col overflow-hidden bg-white rounded">
+                <div class="flex flex-col overflow-hidden bg-white rounded hover:shadow-md">
                     <div class="relative h-60">
                         <img class="object-cover w-full" src="{{ asset('images/destacado/3.jpg') }}" alt="">
                         <img class="absolute right-0 p-2 rounded-l-[4px] top-8 bg-white"

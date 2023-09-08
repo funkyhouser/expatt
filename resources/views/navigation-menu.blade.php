@@ -21,30 +21,30 @@
                     Conviértete en Sponsor
                 </x-nav-link>
             @else
-            <x-nav-link href="{{ url('/vivir-en/argentina#conoce-argentina') }}" :active="request()->routeIs('dashboard')">
-                Conoce Argentina
-            </x-nav-link>
-            <x-nav-link href="{{ url('/vivir-en/argentina#informacion-util') }}" :active="request()->routeIs('dashboard')">
-                Información útil
-            </x-nav-link>
-            <x-nav-link href="{{ url('/vivir-en/argentina#conoce-argentina') }}" :active="request()->routeIs('dashboard')">
-                Comienza
-            </x-nav-link>
-            <x-nav-link href="#" :active="request()->routeIs('dashboard')">
-                Disfruta
-            </x-nav-link>
-            <x-nav-link href="#" :active="request()->routeIs('dashboard')">
-                Asistencia
-            </x-nav-link>
-            <x-nav-link href="#" :active="request()->routeIs('dashboard')" class="pl-2 pr-2 ">
-                <i class="fa-solid fa-user text-[#25E59B] hover:text-white"></i>
-            </x-nav-link>
-            <x-nav-link href="#" :active="request()->routeIs('dashboard')" class="pl-2 pr-2 ">
-                <i class="fa-solid fa-bell text-[#25E59B] hover:text-white"></i>
-            </x-nav-link>
-            <x-nav-link href="#" :active="request()->routeIs('dashboard')"  class="pl-2 pr-0">
-                <i class="fa-solid fa-magnifying-glass text-[#25E59B] hover:text-white"></i>
-            </x-nav-link>
+                <x-nav-link href="{{ url('/vivir-en/argentina#conoce-argentina') }}" :active="request()->routeIs('dashboard')">
+                    Conoce Argentina
+                </x-nav-link>
+                <x-nav-link href="{{ url('/vivir-en/argentina#informacion-util') }}" :active="request()->routeIs('dashboard')">
+                    Información útil
+                </x-nav-link>
+                <x-nav-link href="{{ url('/vivir-en/argentina#conoce-argentina') }}" :active="request()->routeIs('dashboard')">
+                    Comienza
+                </x-nav-link>
+                <x-nav-link href="#" :active="request()->routeIs('dashboard')">
+                    Disfruta
+                </x-nav-link>
+                <x-nav-link href="#" :active="request()->routeIs('dashboard')">
+                    Asistencia
+                </x-nav-link>
+                <x-nav-link href="#" :active="request()->routeIs('dashboard')" class="pl-2 pr-2 ">
+                    <i class="fa-solid fa-user text-[#25E59B] hover:text-white"></i>
+                </x-nav-link>
+                <x-nav-link href="#" :active="request()->routeIs('dashboard')" class="pl-2 pr-2 ">
+                    <i class="fa-solid fa-bell text-[#25E59B] hover:text-white"></i>
+                </x-nav-link>
+                <x-nav-link href="#" :active="request()->routeIs('dashboard')"  class="pl-2 pr-0">
+                    <i class="fa-solid fa-magnifying-glass text-[#25E59B] hover:text-white"></i>
+                </x-nav-link>
             @endif
 
         </div>
@@ -68,9 +68,42 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link href="#" :active="request()->routeIs('dashboard')">
-                {{ __('Dashboard') }}
-            </x-responsive-nav-link>
+            @if (request()->routeIs('home'))
+                <x-responsive-nav-link href="#" :active="request()->routeIs('dashboard')">
+                    Quiénes Somos
+                </x-responsive-nav-link>
+                <x-responsive-nav-link href="#" :active="request()->routeIs('dashboard')">
+                    Conviértete en Sponsor
+                </x-responsive-nav-link>
+            @else
+
+                <x-responsive-nav-link href="{{ url('/vivir-en/argentina#conoce-argentina') }}" :active="request()->routeIs('dashboard')">
+                    Conoce Argentina
+                </x-responsive-nav-link>
+                <x-responsive-nav-link href="{{ url('/vivir-en/argentina#informacion-util') }}" :active="request()->routeIs('dashboard')">
+                    Información útil
+                </x-responsive-nav-link>
+                <x-responsive-nav-link href="{{ url('/vivir-en/argentina#conoce-argentina') }}" :active="request()->routeIs('dashboard')">
+                    Comienza
+                </x-responsive-nav-link>
+                <x-responsive-nav-link href="#" :active="request()->routeIs('dashboard')">
+                    Disfruta
+                </x-responsive-nav-link>
+                <x-responsive-nav-link href="#" :active="request()->routeIs('dashboard')">
+                    Asistencia
+                </x-responsive-nav-link>
+                <div class="inline-flex">
+                    <x-responsive-nav-link href="#" :active="request()->routeIs('dashboard')" class="pl-2 pr-2 ">
+                        <i class="fa-solid fa-user text-[#25E59B] hover:text-white"></i>
+                    </x-responsive-nav-link>
+                    <x-responsive-nav-link href="#" :active="request()->routeIs('dashboard')" class="pl-2 pr-2 ">
+                        <i class="fa-solid fa-bell text-[#25E59B] hover:text-white"></i>
+                    </x-responsive-nav-link>
+                    <x-responsive-nav-link href="#" :active="request()->routeIs('dashboard')"  class="pl-2 pr-0">
+                        <i class="fa-solid fa-magnifying-glass text-[#25E59B] hover:text-white"></i>
+                    </x-responsive-nav-link>
+                </div>
+            @endif
         </div>
 
         <!-- Responsive Settings Options -->
