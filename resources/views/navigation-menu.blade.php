@@ -13,12 +13,40 @@
 
         <!-- Navigation Links -->
         <div class="hidden text-xs font-bold sm:flex sm:items-center">
+            @if (request()->routeIs('home'))
+                <x-nav-link href="#" :active="request()->routeIs('dashboard')">
+                    Quiénes Somos
+                </x-nav-link>
+                <x-nav-link href="#" :active="request()->routeIs('dashboard')" class="pr-0">
+                    Conviértete en Sponsor
+                </x-nav-link>
+            @else
+            <x-nav-link href="{{ url('/vivir-en/argentina#conoce-argentina') }}" :active="request()->routeIs('dashboard')">
+                Conoce Argentina
+            </x-nav-link>
+            <x-nav-link href="{{ url('/vivir-en/argentina#informacion-util') }}" :active="request()->routeIs('dashboard')">
+                Información útil
+            </x-nav-link>
+            <x-nav-link href="{{ url('/vivir-en/argentina#conoce-argentina') }}" :active="request()->routeIs('dashboard')">
+                Comienza
+            </x-nav-link>
             <x-nav-link href="#" :active="request()->routeIs('dashboard')">
-                Quiénes Somos
+                Disfruta
             </x-nav-link>
-            <x-nav-link href="#" :active="request()->routeIs('dashboard')" class="pr-0">
-                Conviértete en Sponsor
+            <x-nav-link href="#" :active="request()->routeIs('dashboard')">
+                Asistencia
             </x-nav-link>
+            <x-nav-link href="#" :active="request()->routeIs('dashboard')" class="pl-2 pr-2 ">
+                <i class="fa-solid fa-user text-[#25E59B] hover:text-white"></i>
+            </x-nav-link>
+            <x-nav-link href="#" :active="request()->routeIs('dashboard')" class="pl-2 pr-2 ">
+                <i class="fa-solid fa-bell text-[#25E59B] hover:text-white"></i>
+            </x-nav-link>
+            <x-nav-link href="#" :active="request()->routeIs('dashboard')"  class="pl-2 pr-0">
+                <i class="fa-solid fa-magnifying-glass text-[#25E59B] hover:text-white"></i>
+            </x-nav-link>
+            @endif
+
         </div>
 
 

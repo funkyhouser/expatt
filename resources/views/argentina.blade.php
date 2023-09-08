@@ -22,7 +22,7 @@
     </section>
     {{-- INFORMACION UTIL --}}
     <section class="py-12 bg-[#3C137C] relative isolate">
-        <div class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
+        <div id="informacion-util" class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
             <p class="mb-6 text-xl font-black text-center text-white lg:text-3xl">Información útil para expatriados</p>
             <div class="grid gap-6 font-black text-white lg:grid-cols-3">
                 <a href="{{ url('/visado-documentacion/argentina') }}" class="flex flex-col h-full text-center">
