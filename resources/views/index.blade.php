@@ -318,7 +318,8 @@
         <div class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
             <p class="text-[#3C137C] font-black text-xl lg:text-3xl text-center mb-6">Destacado del mes: Argentina</p>
             <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
-                <div class="flex flex-col overflow-hidden bg-white rounded hover:shadow-md">
+                <a href="{{ url('/argentina/los-beneficios-de-ser-un-expatriado-en-argentina') }}"
+                    class="flex flex-col overflow-hidden bg-white rounded hover:shadow-md">
                     <div class="relative h-60">
                         <img class="object-cover w-full" src="{{ asset('images/destacado/1.jpg') }}" alt="">
                         <img class="absolute right-0 p-2 rounded-l-[4px] top-8 bg-white"
@@ -333,12 +334,12 @@
                             voluptatem magni nobis aspernatur corporis reiciendis facilis rerum quo possimus quibusdam
                             velit cum nemo error, eveniet laborum autem! Facere non vero aperiam aliquam ut nihil, ea in
                             iusto libero eos doloribus? Animi, nam.</p>
-                        <div class="flex flex-wrap pt-3 mt-auto">
-                            <a href="{{ url('/argentina/los-beneficios-de-ser-un-expatriado-en-argentina') }}"
-                                class="font-black text-[#3C137C] mb-2 mr-2 border-b-4 border-[#25E59B]">Leer más</a>
+                        <div class="flex flex-wrap pt-1 mt-auto">
+                            <p class="font-black text-[#3C137C] mb-2 border-b-4 border-[#25E59B]">Leer más</p>
                         </div>
+
                     </div>
-                </div>
+                </a>
                 {{-- --}}
                 <div class="flex flex-col overflow-hidden bg-white rounded hover:shadow-md">
                     <div class="relative h-60">
@@ -486,36 +487,56 @@
                     style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
                     <div x-ref="gallery" id="gallery"
                         class="grid grid-cols-[1fr_1fr_1fr_1fr_1fr] grid-rows-[1fr_1fr_1fr_1fr] gap-1 lg:gap-4 ">
-                        <img @click="imageGalleryOpen"
-                            class="cursor-pointer object-cover w-full h-full rounded [grid-area:1/1/2/3]"
-                            src="{{ asset('images/galeria/1.jpg') }}" alt="" data-index="1">
-                        <img @click="imageGalleryOpen"
-                            class="cursor-pointer object-cover w-full h-full rounded [grid-area:1/3/2/6]"
-                            src="{{ asset('images/galeria/2.jpg') }}" alt="" data-index="2">
-                        <img @click="imageGalleryOpen"
-                            class="cursor-pointer object-cover w-full h-full rounded [grid-area:2/1/3/2]"
-                            src="{{ asset('images/galeria/3.jpg') }}" alt="" data-index="3">
-                        <img @click="imageGalleryOpen"
-                            class="cursor-pointer object-cover w-full h-full rounded [grid-area:2/2/3/3]"
-                            src="{{ asset('images/galeria/4.jpg') }}" alt="" data-index="4">
-                        <img @click="imageGalleryOpen"
-                            class="cursor-pointer object-cover w-full h-full rounded [grid-area:2/3/3/5]"
-                            src="{{ asset('images/galeria/5.jpg') }}" alt="" data-index="5">
-                        <img @click="imageGalleryOpen"
-                            class="cursor-pointer object-cover w-full h-full rounded [grid-area:2/5/3/6]"
-                            src="{{ asset('images/galeria/6.jpg') }}" alt="" data-index="6">
-                        <img @click="imageGalleryOpen"
-                            class="cursor-pointer object-cover w-full h-full rounded [grid-area:3/1/4/4]"
-                            src="{{ asset('images/galeria/7.jpg') }}" alt="" data-index="7">
-                        <img @click="imageGalleryOpen"
-                            class="cursor-pointer object-cover w-full h-full rounded [grid-area:3/4/5/6]"
-                            src="{{ asset('images/galeria/8.jpg') }}" alt="" data-index="8">
-                        <img @click="imageGalleryOpen"
-                            class="cursor-pointer object-cover w-full h-full rounded [grid-area:4/1/5/3]"
-                            src="{{ asset('images/galeria/9.jpg') }}" alt="" data-index="9">
-                        <img @click="imageGalleryOpen"
-                            class="cursor-pointer object-cover w-full h-full rounded [grid-area:4/3/5/4]"
-                            src="{{ asset('images/galeria/10.jpg') }}" alt="" data-index="10">
+                        <div class="w-full h-full overflow-hidden [grid-area:1/1/2/3] ">
+                            <img @click="imageGalleryOpen"
+                                class="object-cover w-full h-full transition duration-500 rounded cursor-pointer hover:scale-105"
+                                src="{{ asset('images/galeria/1.jpg') }}" alt="" data-index="1">
+                        </div>
+                        <div class="w-full h-full overflow-hidden [grid-area:1/3/2/6] ">
+                            <img @click="imageGalleryOpen"
+                                class="object-cover w-full h-full transition duration-500 rounded cursor-pointer hover:scale-105"
+                                src="{{ asset('images/galeria/2.jpg') }}" alt="" data-index="2">
+                        </div>
+                        <div class="w-full h-full overflow-hidden [grid-area:2/1/3/2] ">
+                            <img @click="imageGalleryOpen"
+                                class="object-cover w-full h-full transition duration-500 rounded cursor-pointer hover:scale-105"
+                                src="{{ asset('images/galeria/3.jpg') }}" alt="" data-index="3">
+                        </div>
+                        <div class="w-full h-full overflow-hidden [grid-area:2/2/3/3] ">
+                            <img @click="imageGalleryOpen"
+                                class="object-cover w-full h-full transition duration-500 rounded cursor-pointer hover:scale-105"
+                                src="{{ asset('images/galeria/4.jpg') }}" alt="" data-index="4">
+                        </div>
+                        <div class="w-full h-full overflow-hidden [grid-area:2/3/3/5] ">
+                            <img @click="imageGalleryOpen"
+                                class="object-cover w-full h-full transition duration-500 rounded cursor-pointer hover:scale-105"
+                                src="{{ asset('images/galeria/5.jpg') }}" alt="" data-index="5">
+                        </div>
+                        <div class="w-full h-full overflow-hidden [grid-area:2/5/3/6] ">
+                            <img @click="imageGalleryOpen"
+                                class="object-cover w-full h-full transition duration-500 rounded cursor-pointer hover:scale-105"
+                                src="{{ asset('images/galeria/6.jpg') }}" alt="" data-index="6">
+                        </div>
+                        <div class="w-full h-full overflow-hidden [grid-area:3/1/4/4] ">
+                            <img @click="imageGalleryOpen"
+                                class="object-cover w-full h-full transition duration-500 rounded cursor-pointer hover:scale-105"
+                                src="{{ asset('images/galeria/7.jpg') }}" alt="" data-index="7">
+                        </div>
+                        <div class="w-full h-full overflow-hidden [grid-area:3/4/5/6] ">
+                            <img @click="imageGalleryOpen"
+                                class="object-cover w-full h-full transition duration-500 rounded cursor-pointer hover:scale-105"
+                                src="{{ asset('images/galeria/8.jpg') }}" alt="" data-index="8">
+                        </div>
+                        <div class="w-full h-full overflow-hidden [grid-area:4/1/5/3] ">
+                            <img @click="imageGalleryOpen"
+                                class="object-cover w-full h-full transition duration-500 rounded cursor-pointer hover:scale-105"
+                                src="{{ asset('images/galeria/9.jpg') }}" alt="" data-index="9">
+                        </div>
+                        <div class="w-full h-full overflow-hidden [grid-area:4/3/5/4] ">
+                            <img @click="imageGalleryOpen"
+                                class="object-cover w-full h-full transition duration-500 rounded cursor-pointer hover:scale-105"
+                                src="{{ asset('images/galeria/10.jpg') }}" alt="" data-index="10">
+                        </div>
                     </div>
                 </div>
                 <template x-teleport="body">
