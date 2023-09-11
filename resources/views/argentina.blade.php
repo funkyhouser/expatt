@@ -181,7 +181,7 @@
                         </div>
                         <div class="flex items-center justify-center p-4 mt-auto">
                             <a href="{{ url('/mudarse/argentina') }}"
-                                class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t ">
+                                class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t hover:border-b-[#47108E] hover:border-t-[#3CEBA7] hover:border-s-[#3CEBA7] hover:border-e-[#3CEBA7] hover:text-white hover:bg-[#3CEBA7]">
                                 Más información
                             </a>
                         </div>
@@ -222,7 +222,7 @@
                         </div>
                         <div class="flex items-center justify-center p-4 mt-auto">
                             <a href="{{ url('/vivir/argentina') }}"
-                                class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t ">
+                                class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t hover:border-b-[#47108E] hover:border-t-[#3CEBA7] hover:border-s-[#3CEBA7] hover:border-e-[#3CEBA7] hover:text-white hover:bg-[#3CEBA7]">
                                 Más información
                             </a>
                         </div>
@@ -263,7 +263,7 @@
                         </div>
                         <div class="flex items-center justify-center p-4 mt-auto">
                             <a href="{{ url('/educacion/argentina') }}"
-                                class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t ">
+                                class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t hover:border-b-[#47108E] hover:border-t-[#3CEBA7] hover:border-s-[#3CEBA7] hover:border-e-[#3CEBA7] hover:text-white hover:bg-[#3CEBA7]">
                                 Más información
                             </a>
                         </div>
@@ -305,7 +305,7 @@
                         </div>
                         <div class="flex items-center justify-center p-4 mt-auto">
                             <a href="{{ url('/desarrolla-tu-futuro/argentina#trabaja') }}"
-                                class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t ">
+                                class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t hover:border-b-[#47108E] hover:border-t-[#3CEBA7] hover:border-s-[#3CEBA7] hover:border-e-[#3CEBA7] hover:text-white hover:bg-[#3CEBA7]">
                                 Más información
                             </a>
                         </div>
@@ -346,7 +346,7 @@
                         </div>
                         <div class="flex items-center justify-center p-4 mt-auto">
                             <a href="{{ url('/finanzas-economia/argentina') }}"
-                                class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t ">
+                                class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t hover:border-b-[#47108E] hover:border-t-[#3CEBA7] hover:border-s-[#3CEBA7] hover:border-e-[#3CEBA7] hover:text-white hover:bg-[#3CEBA7]">
                                 Más información
                             </a>
                         </div>
@@ -387,7 +387,7 @@
                         </div>
                         <div class="flex items-center justify-center p-4 mt-auto">
                             <a href="{{ url('/salud/argentina') }}"
-                                class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t ">
+                                class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t hover:border-b-[#47108E] hover:border-t-[#3CEBA7] hover:border-s-[#3CEBA7] hover:border-e-[#3CEBA7] hover:text-white hover:bg-[#3CEBA7]">
                                 Más información
                             </a>
                         </div>
