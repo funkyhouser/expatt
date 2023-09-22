@@ -155,17 +155,17 @@
             </p>
             <div class="grid justify-center gap-4 text-lg font-black text-white lg:grid-cols-3 lg:text-2xl">
                 <a href="{{ url('/en-movimiento/argentina') }}" class="overflow-hidden rounded hover:shadow-md">
-                    <img class="object-cover h-64 w-72" src="{{ asset('images/conoce-mas/en-movimiento.jpg') }}" alt="movimiento">
+                    <img class="object-cover h-64 w-full" src="{{ asset('images/conoce-mas/en-movimiento.jpg') }}" alt="movimiento">
                     <p class="text-center w-full py-2 lg:py-4 bg-[#3C137C]">En movimiento</p>
                 </a>
-                <a href="{{ url('/venta-en/argentina') }}" class="overflow-hidden rounded hover:shadow-md">
-                    <img class="object-cover h-64 w-72" src="{{ asset('images/conoce-mas/asesoria-juridica.jpg') }}" alt="Asesoria Jurídica">
+                <div class="overflow-hidden rounded hover:shadow-md">
+                    <img class="object-cover h-64 w-full" src="{{ asset('images/conoce-mas/asesoria-juridica.jpg') }}" alt="Asesoria Jurídica">
                     <p class="text-center w-full py-2 lg:py-4 bg-[#3C137C]">Asesoria Jurídica</p>
-                </a>
-                <a href="{{ url('/renta-en/argentina') }}" class="overflow-hidden rounded hover:shadow-md">
-                    <img class="object-cover h-64 w-72" src="{{ asset('images/conoce-mas/telefonia-internet.jpg') }}" alt="telefonia internet">
+                </div>
+                <div class="overflow-hidden rounded hover:shadow-md">
+                    <img class="object-cover h-64 w-full" src="{{ asset('images/conoce-mas/telefonia-internet.jpg') }}" alt="telefonia internet">
                     <p class="text-center w-full py-2 lg:py-4 bg-[#3C137C]">Telefonía/Internet</p>
-                </a>
+                </div>
             </div>
         </div>
     </section>
@@ -176,22 +176,20 @@
                 class="flex items-center flex-col justify-center bg-spotlight-pattern bg-[left_0%] lg:bg-[left_-24%] py-12 lg:py-0">
                 <p class="text-2xl font-black lg:leading-tight lg:text-5xl">¿Cómo y dónde <br>realizar tus <br>tramites?</p>
             </div>
-            <a href="{{ url('/desarrolla-tu-futuro/argentina#trabaja') }}"
+            <div
                 class="relative flex flex-col items-center justify-end isolate min-h-[300px]">
-                <p
-                    class="w-2/3 lg:w-1/3  flex justify-center py-2 rounded-t-md px-6 bg-[#25E59B] hover:bg-white transition hover:text-[#3C137C]">
+                <p class="w-2/3 lg:w-1/3 flex justify-center py-2 rounded-t-md px-6 bg-[#25E59B] hover:bg-white transition hover:text-[#3C137C]">
                     Bancos</p>
                 <img src="{{ asset('images/spotlight/banco.jpg') }}" alt=""
                     class="absolute inset-0 object-cover w-full h-full -z-10">
-            </a>
-            <a href="{{ url('/desarrolla-tu-futuro/argentina#estudia') }}"
+            </div>
+            <div
                 class="relative flex flex-col items-center justify-end isolate min-h-[300px]">
-                <p
-                    class="w-2/3 lg:w-1/3  flex justify-center py-2 rounded-t-md text-center px-6 bg-[#25E59B] hover:bg-white transition hover:text-[#3C137C] leading-4">
+                <p class="w-2/3 lg:w-1/3 flex justify-center py-2 rounded-t-md text-center px-6 bg-[#25E59B] hover:bg-white transition hover:text-[#3C137C] leading-4">
                     Transferencia <br>de dinero</p>
                 <img src="{{ asset('images/spotlight/transferencia-de-dinero.jpg') }}" alt="transferencia de dinero"
                     class="absolute inset-0 object-cover w-full h-full -z-10">
-            </a>
+            </div>
         </div>
     </section>
     {{-- Encontrá tu mejor servicio --}}
