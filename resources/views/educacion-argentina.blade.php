@@ -12,7 +12,7 @@
     <section class="py-12 bg-white">
         <div class="max-w-screen-lg px-4 mx-auto my-auto sm:px-6 lg:px-8">
             <article id="trabaja" class="grid grid-cols-5 gap-4">
-                <div class="col-span-5 lg:col-span-4">
+                <div class="col-span-5 text-black lg:col-span-4">
                     <p class="mb-4">
                         Por su calidad educativa y accesibilidad, Argentina es un destino muy elegido por los
                         estudiantes de todo el mundo.<br><br>
@@ -28,27 +28,37 @@
 
                     </p>
 
-                    <h2 class="mb-4 text-[#3C137C] font-bold text-2xl">Niveles educativos</h2>
+                    <h2 class="mb-4 text-[#3C137C] font-bold text-4xl">Niveles educativos</h2>
                     <p class="mb-4">
-                        En Argentina podemos hallar 4 niveles educativos predominantes:<br><br>
+                        En Argentina podemos hallar 4 niveles educativos predominantes:<br>
 
-                        <b>-Inicial:</b> que comprende a los niños desde los 45 días hasta los 5 años de vida. La ley establece que los últimos dos son obligatorios para la inclusión en la enseñanza formal.<br><br>
+                        <h3 class="text-[#3C137C] font-bold text-xl">Inicial</h3>
+                        Que comprende a los niños desde los 45 días hasta los 5 años de vida. La ley establece que los últimos dos son obligatorios para la inclusión en la enseñanza formal.<br><br>
 
-                        <b>-Primario:</b> que es obligatorio y está destinado a la formación de los niños a partir de los 6 años.<br><br>
+                        <h3 class="text-[#3C137C] font-bold text-xl">Primario</h3>
+                        Que es obligatorio y está destinado a la formación de los niños a partir de los 6 años.<br><br>
 
-                        <b>-Secundario:</b> también es obligatorio y constituye una unidad pedagógica para adolescentes y jóvenes que hayan concluido la educación primaria.<br><br>
+                        <h3 class="text-[#3C137C] font-bold text-xl">Secundario</h3>
+                        También es obligatorio y constituye una unidad pedagógica para adolescentes y jóvenes que hayan concluido la educación primaria.<br><br>
 
                         Este nivel, a su vez, se divide en dos ciclos:<br> un ciclo básico común a todas las orientaciones, y un ciclo orientado según las distintas áreas del conocimiento.<br><br>
 
-                        <b>-Superior:</b> de carácter electivo para aquellas personas que hayan terminado sus estudios secundarios.:<br><br>
+                        <h3 class="text-[#3C137C] font-bold text-xl">Superior</h3>
+                        De carácter electivo para aquellas personas que hayan terminado sus estudios secundarios.<br><br>
+                    </p>
+                    <h2 class="mb-4 text-[#3C137C] font-bold text-4xl">Educación superior</h2>
+                    <p class="mb-4">
+                        La educación del tipo superior en Argentina contempla, a su vez, dos tipos:<br>
 
-                        <b>-Terciario</b>, destinado a egresados del nivel secundario, está conformado por:
+                        <h3 class="text-[#3C137C] font-bold text-xl">Terciario</h3>
+                        Destinado a egresados del nivel secundario, está conformado por:<br>
                         Escuelas Normales Superiores (ENS).<br>
                         Institutos Superiores de Formación Docente (ISFD).<br>
                         Institutos de Formación Artística (IFA).<br>
                         Institutos de Formación Técnica Superior (IFTS).<br><br>
 
-                        <b>-Universitario</b>, que incluye:
+                        <h3 class="text-[#3C137C] font-bold text-xl">Universitario</h3>
+                        Incluye:
                         Institutos universitarios estatales.<br>
                         Institutos universitarios privados.<br>
                         Universidades nacionales.<br>
@@ -60,14 +70,14 @@
 
                 </div>
                 <div class="hidden lg:block lg:col-span-1">
-                    <img src="{{ asset('images/ads/uade-ads.jpg') }}" alt="" class="w-full mb-4">
-                    <img src="{{ asset('images/ads/uca-ads.jpg') }}" alt="" class="w-full">
+                    <img src="{{ asset('images/ads/bannerschool-ads.jpg') }}" alt="" class="w-full mb-4">
+                    <img src="{{ asset('images/ads/uca-large-ads.jpg') }}" alt="" class="w-full">
                 </div>
             </article>
             <div class="my-6 text-center">
-                <a href="{{ route('argentina') }}"
-                    class="mx-auto block w-full lg:w-max rounded-sm px-0 lg:px-10 py-3 shadow-md bg-[#3C137C] font-medium text-2xl text-white">Volver
-                    atrás</a>
+                <a href="{{ route('argentina') }}" class="mx-auto block w-full lg:w-max rounded-xl px-0 lg:px-4 py-3 shadow-lg bg-[#3C137C] font-bold text-xl text-white">
+                    Volver atrás
+                </a>
             </div>
         </div>
     </section>
@@ -94,23 +104,6 @@
                     </div>
                 </div>
             </a>
-        </div>
-    </section>
-    {{-- Encontra tu casa --}}
-    <section class="pb-12 bg-white">
-        <div class="max-w-screen-lg px-4 mx-auto my-auto sm:px-6 lg:px-8">
-            <p class="mb-6 text-xl font-black text-center text-[#3C137C] lg:text-3xl">Te ayudamos a encontrar tu casa
-            </p>
-            <div class="flex justify-center gap-4 text-lg font-black text-white lg:text-2xl">
-                <a href="#" class="overflow-hidden rounded">
-                    <img class="object-cover w-full" src="{{ asset('images/casa/renta.jpg') }}" alt="renta">
-                    <p class="text-center w-full py-2 lg:py-4 bg-[#3C137C]">Renta</p>
-                </a>
-                <a href="#" class="overflow-hidden rounded">
-                    <img class="object-cover w-full" src="{{ asset('images/casa/compra.jpg') }}" alt="compra">
-                    <p class="text-center w-full py-2 lg:py-4 bg-[#3C137C]">Compra</p>
-                </a>
-            </div>
         </div>
     </section>
 </x-app-layout>

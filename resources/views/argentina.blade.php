@@ -8,13 +8,13 @@
                 <h1 class="mb-4 text-lg font-black text-white lg:text-8xl">
                     Argentina
                 </h1>
-                <p class="text-[#25E59B] text-4xl font-semibold ">Lo que tienes que saber</p>
-                <p class="py-4 text-[#F9F9F9]  lg:w-3/4">Descubre todo sobre Argentina para comenzar tu vida como
+                <p class="text-[#25E59B] text-4xl font-semibold">Lo que tienes que saber</p>
+                <p class="pt-4 pb-7 text-[#F9F9F9] lg:w-3/4">Descubre todo sobre Argentina para comenzar tu vida como
                     expatriado con el pie correcto: su cultura e identidad, cuáles son las mejores ciudades para vivir y
                     mucho más.</p>
                 <div class="flex text-center">
                     <a href="#conoce-argentina"
-                        class="text-[#47108E] font-bold py-3 w-full lg:w-1/3 border-b-2 border-[#3CEBA7] bg-white hover:bg-[#3CEBA7] transition  rounded-t">
+                        class="text-[#47108E] font-bold py-4 w-full lg:w-72 bg-white hover:bg-[#3CEBA7] transition  rounded-xl">
                         Conoce Argentina
                     </a>
                 </div>
@@ -25,400 +25,212 @@
     <section class="py-12 bg-[#3C137C] relative isolate">
         <div id="informacion-util" class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
             <p class="mb-6 text-xl font-black text-center text-white lg:text-3xl">Información útil para expatriados</p>
-            <div class="grid gap-6 font-black text-white lg:grid-cols-3">
-                <a href="{{ url('/visado-documentacion/argentina') }}" class="flex flex-col h-full text-center">
+            <div class="grid gap-6 text-3xl font-black text-white lg:grid-cols-3">
+                <a href="{{ url('/informacion-importante/argentina') }}" class="flex flex-col h-full text-center lg:items-end">
                     <div class="flex items-center justify-center h-40">
-                        <div class="relative p-6 group/escala">
-                            <svg class=" absolute top-1 left-1 z-[-1]" width="100%" height="auto" viewBox="0 0 222 222"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g filter="url(#filter0_d_1_3063)">
-                                    <path
-                                        d="M204.543 90.0568H177.171L198.385 68.848C193.558 57.2669 186.449 46.4167 177.02 36.9968C138.348 -1.66561 75.6516 -1.66561 36.9798 36.9968C13.3142 60.6568 4.1567 93.3081 9.45706 123.943H36.8286L15.6145 145.152C20.4485 156.733 27.5514 167.583 36.9798 177.003C75.6516 215.666 138.348 215.666 177.02 177.003C200.686 153.343 209.843 120.692 204.543 90.0568Z"
-                                        fill="#00BDFF" />
-                                </g>
-                                <defs>
-                                    <filter id="filter0_d_1_3063" x="0" y="0" width="222" height="222"
-                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                        <feColorMatrix in="SourceAlpha" type="matrix"
-                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                        <feOffset dx="4" dy="4" />
-                                        <feGaussianBlur stdDeviation="6" />
-                                        <feComposite in2="hardAlpha" operator="out" />
-                                        <feColorMatrix type="matrix"
-                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
-                                        <feBlend mode="normal" in2="BackgroundImageFix"
-                                            result="effect1_dropShadow_1_3063" />
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3063"
-                                            result="shape" />
-                                    </filter>
-                                </defs>
-                            </svg>
-                            <div class="p-8 bg-white rounded-full">
+                        <div class="group/escala">
+                            <div class="w-[150px] h-[150px] flex justify-center items-center relative rounded-full before:content-[''] before:absolute before:w-full before:h-full before:left-0 before:top-1/2 before:-translate-y-1/2 before:rounded-[100%] before before:[clip-path:path('M148.896_62.1643H128.16L144.231_46.0969C140.574_37.3234_135.188_29.1036_128.046_21.9673C98.7488_-7.32243_51.2512_-7.32243_21.9544_21.9673C4.02587_39.8915_-2.91159_64.6274_1.10383_87.8357H21.8398L5.7686_103.903C9.4307_112.677_14.8116_120.896_21.9544_128.033C51.2512_157.322_98.7488_157.322_128.046_128.033C145.974_110.109_152.912_85.3727_148.896_62.1643Z')] before:bg-[#00BDFF]
+
+                           after:content-[''] after:absolute after:border-4 after:border-white after:border-solid after:w-[90%] after:h-[90%] after:left-0 after:top-1/2 after:translate-x-[5%] after:-translate-y-1/2 after:rounded-[100%]">
                                 <img class="flex items-center justify-center h-16 text-center transition scale-100 group-hover/escala:scale-110 aspect-square"
-                                    src="{{ asset('images/icons/documentacion.svg') }}" alt="documentacion">
+                                    src="{{ asset('images/icons/informacion.svg') }}" alt="informacion">
                             </div>
                         </div>
                     </div>
-                    <h2 class="mt-4 hover:animate-jump">Visado y documentación</h2>
+                    <h2 class="mt-4 hover:animate-jump">Información <br>importante</h2>
                 </a>
-                <a href="{{ url('/impuestos-extranjeros/argentina') }}" class="flex flex-col h-full text-center">
+                <a href="{{ url('/visado-documentacion/argentina') }}" class="flex flex-col h-full text-center">
                     <div class="flex items-center justify-center h-40">
-                        <div class="relative p-6 group/escala">
-                            <svg class="absolute top-1 left-1 z-[-1]" width="100%" height="auto" viewBox="0 0 222 222"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g filter="url(#filter0_d_1_3063)">
-                                    <path
-                                        d="M204.543 90.0568H177.171L198.385 68.848C193.558 57.2669 186.449 46.4167 177.02 36.9968C138.348 -1.66561 75.6516 -1.66561 36.9798 36.9968C13.3142 60.6568 4.1567 93.3081 9.45706 123.943H36.8286L15.6145 145.152C20.4485 156.733 27.5514 167.583 36.9798 177.003C75.6516 215.666 138.348 215.666 177.02 177.003C200.686 153.343 209.843 120.692 204.543 90.0568Z"
-                                        fill="#FF7300" />
-                                </g>
-                                <defs>
-                                    <filter id="filter0_d_1_3063" x="0" y="0" width="222" height="222"
-                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                        <feColorMatrix in="SourceAlpha" type="matrix"
-                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                        <feOffset dx="4" dy="4" />
-                                        <feGaussianBlur stdDeviation="6" />
-                                        <feComposite in2="hardAlpha" operator="out" />
-                                        <feColorMatrix type="matrix"
-                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
-                                        <feBlend mode="normal" in2="BackgroundImageFix"
-                                            result="effect1_dropShadow_1_3063" />
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3063"
-                                            result="shape" />
-                                    </filter>
-                                </defs>
-                            </svg>
-                            <div class="p-8 bg-white rounded-full">
+                        <div class="group/escala">
+                            <div class="w-[150px] h-[150px] flex justify-center items-center relative rounded-full before:content-[''] before:absolute before:w-full before:h-full before:left-0 before:top-1/2 before:-translate-y-1/2 before:rounded-[100%] before before:[clip-path:path('M148.896_62.1643H128.16L144.231_46.0969C140.574_37.3234_135.188_29.1036_128.046_21.9673C98.7488_-7.32243_51.2512_-7.32243_21.9544_21.9673C4.02587_39.8915_-2.91159_64.6274_1.10383_87.8357H21.8398L5.7686_103.903C9.4307_112.677_14.8116_120.896_21.9544_128.033C51.2512_157.322_98.7488_157.322_128.046_128.033C145.974_110.109_152.912_85.3727_148.896_62.1643Z')] before:bg-[#FF7300]
+
+                           after:content-[''] after:absolute after:border-4 after:border-white after:border-solid after:w-[90%] after:h-[90%] after:left-0 after:top-1/2 after:translate-x-[5%] after:-translate-y-1/2 after:rounded-[100%]">
+                                <img class="flex items-center justify-center h-16 text-center transition scale-100 group-hover/escala:scale-110 aspect-square"
+                                    src="{{ asset('images/icons/visado.svg') }}" alt="visado">
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="mt-4">Visado y <br>documentación</h2>
+                </a>
+                <a href="{{ url('/impuestos-extranjeros/argentina') }}" class="flex flex-col h-full text-center lg:items-start">
+                    <div class="flex items-center justify-center h-40">
+                        <div class="group/escala">
+                            <div class="w-[150px] h-[150px] flex justify-center items-center relative rounded-full before:content-[''] before:absolute before:w-full before:h-full before:left-0 before:top-1/2 before:-translate-y-1/2 before:rounded-[100%] before before:[clip-path:path('M148.896_62.1643H128.16L144.231_46.0969C140.574_37.3234_135.188_29.1036_128.046_21.9673C98.7488_-7.32243_51.2512_-7.32243_21.9544_21.9673C4.02587_39.8915_-2.91159_64.6274_1.10383_87.8357H21.8398L5.7686_103.903C9.4307_112.677_14.8116_120.896_21.9544_128.033C51.2512_157.322_98.7488_157.322_128.046_128.033C145.974_110.109_152.912_85.3727_148.896_62.1643Z')] before:bg-[#FF008C]
+
+                           after:content-[''] after:absolute after:border-4 after:border-white after:border-solid after:w-[90%] after:h-[90%] after:left-0 after:top-1/2 after:translate-x-[5%] after:-translate-y-1/2 after:rounded-[100%]">
                                 <img class="flex items-center justify-center h-16 text-center transition scale-100 group-hover/escala:scale-110 aspect-square"
                                     src="{{ asset('images/icons/impuestos.svg') }}" alt="impuestos">
                             </div>
                         </div>
                     </div>
-                    <h2 class="mt-4">Impuestos para extranjeros</h2>
-                </a>
-                <a href="#" class="flex flex-col h-full text-center">
-                    <div class="flex items-center justify-center h-40">
-                        <div class="relative p-6 group/escala">
-                            <svg class="absolute top-1 left-1 z-[-1]" width="100%" height="auto" viewBox="0 0 222 222"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g filter="url(#filter0_d_1_3063)">
-                                    <path
-                                        d="M204.543 90.0568H177.171L198.385 68.848C193.558 57.2669 186.449 46.4167 177.02 36.9968C138.348 -1.66561 75.6516 -1.66561 36.9798 36.9968C13.3142 60.6568 4.1567 93.3081 9.45706 123.943H36.8286L15.6145 145.152C20.4485 156.733 27.5514 167.583 36.9798 177.003C75.6516 215.666 138.348 215.666 177.02 177.003C200.686 153.343 209.843 120.692 204.543 90.0568Z"
-                                        fill="#FF008C" />
-                                </g>
-                                <defs>
-                                    <filter id="filter0_d_1_3063" x="0" y="0" width="222" height="222"
-                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                        <feColorMatrix in="SourceAlpha" type="matrix"
-                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                        <feOffset dx="4" dy="4" />
-                                        <feGaussianBlur stdDeviation="6" />
-                                        <feComposite in2="hardAlpha" operator="out" />
-                                        <feColorMatrix type="matrix"
-                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
-                                        <feBlend mode="normal" in2="BackgroundImageFix"
-                                            result="effect1_dropShadow_1_3063" />
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3063"
-                                            result="shape" />
-                                    </filter>
-                                </defs>
-                            </svg>
-                            <div class="p-8 bg-white rounded-full">
-                                <img class="flex items-center justify-center h-16 text-center transition scale-100 group-hover/escala:scale-110 aspect-square"
-                                    src="{{ asset('images/icons/mudanza.svg') }}" alt="mudanza">
-                            </div>
-                        </div>
-                    </div>
-                    <h2 class="mt-4">Mudanza internacional</h2>
+                    <h2 class="mt-4">Impuestos</h2>
                 </a>
             </div>
         </div>
-        <div class="absolute left-0 right-0 bottom-0 max-w-[80%] lg:max-w-[1216px] bg-[#47108E] -z-10 h-[55%] mx-auto">
+        <div class="absolute left-0 right-0 bottom-0 max-w-[80%] lg:max-w-[1216px] bg-[#47108E] -z-10 h-[90%] lg:h-[55%] mx-auto rounded-t-[100px]">
         </div>
     </section>
     {{-- Comienza tu vida en --}}
     <section class="py-12 bg-white">
         <div id="conoce-argentina" class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
-            <p class="mb-6 text-xl font-black text-center text-[#3C137C] lg:text-3xl">Comienza tu nueva vida en
-                Argentina
+            <p class="mb-6 text-xl font-black text-center text-[#3C137C] lg:text-3xl">
+                Comienza tu nueva vida en Argentina
             </p>
             <div class="grid gap-3 font-black text-white gap-y-6 lg:grid-cols-3">
-                <div class="flex flex-col overflow-hidden bg-white rounded drop-shadow-md">
-                    <p class="text-center py-3 text-2xl font-black text-white bg-[#47108E]">Mudarse a Argentina</p>
-                    <div class="h-60">
-                        <img class="object-cover w-full h-full" src="{{ asset('images/argentina/mudarse.jpg') }}"
+                <a href="{{ url('/educacion/argentina') }}" class="flex flex-col overflow-hidden bg-white rounded drop-shadow-md">
+                    <div class="h-64">
+                        <img class="object-cover w-full h-full" src="{{ asset('images/argentina/educacion.jpg') }}"
                             alt="">
                     </div>
-                    <div class="flex flex-col h-full p-3 bg-[#F9F9F9]">
-                        <div class="divide-y divide-gray-100">
-                            <div class="flex justify-between px-4 py-2 cursor-pointer sm:gap-4 sm:px-0">
-                                <p
-                                    class=" hover:translate-x-1.5 transition text-sm font-medium leading-6 text-gray-900">
-                                    Vuelos a Argentina</p>
-                                <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    <i class="px-3 fa-solid fa-arrow-right"></i>
-                                </p>
-                            </div>
-                            <div class="flex justify-between px-4 py-2 cursor-pointer sm:gap-4 sm:px-0">
-                                <p
-                                    class=" hover:translate-x-1.5 transition text-sm font-medium leading-6 text-gray-900">
-                                    Visados y ciudadanías</p>
-                                <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    <i class="px-3 fa-solid fa-arrow-right"></i>
-                                </p>
-                            </div>
-                            <div class="flex justify-between px-4 py-2 cursor-pointer sm:gap-4 sm:px-0">
-                                <p
-                                    class=" hover:translate-x-1.5 transition text-sm font-medium leading-6 text-gray-900">
-                                    Las mejores ciudades para vivir en Argentina</p>
-                                <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    <i class="px-3 fa-solid fa-arrow-right"></i>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-center p-4 mt-auto">
-                            <a href="{{ url('/mudarse/argentina') }}"
-                                class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t hover:border-b-[#47108E] hover:border-t-[#3CEBA7] hover:border-s-[#3CEBA7] hover:border-e-[#3CEBA7] hover:text-white hover:bg-[#3CEBA7]">
-                                Más información
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col overflow-hidden bg-white rounded drop-shadow-md">
-                    <p class="text-center py-3 text-2xl font-black text-white bg-[#47108E]">Vivir en Argentina</p>
-                    <div class="h-60">
-                        <img class="object-cover w-full h-full" src="{{ asset('images/argentina/vivir.jpg') }}"
+                    <p class="text-center py-3 text-2xl font-black text-white bg-[#47108E]">Educación</p>
+                </a>
+                <a href="{{ url('/mundo-laboral/argentina') }}" class="flex flex-col overflow-hidden bg-white rounded drop-shadow-md">
+                    <div class="h-64">
+                        <img class="object-cover w-full h-full" src="{{ asset('images/argentina/mundo-laboral.jpg') }}"
                             alt="vivir">
                     </div>
-                    <div class="flex flex-col h-full p-3 bg-[#F9F9F9]">
-                        <div class="divide-y divide-gray-100">
-                            <div class="flex justify-between px-4 py-2 cursor-pointer sm:gap-4 sm:px-0">
-                                <p
-                                    class=" hover:translate-x-1.5 transition text-sm font-medium leading-6 text-gray-900">
-                                    Proveedores de telefonía e internet</p>
-                                <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    <i class="px-3 fa-solid fa-arrow-right"></i>
-                                </p>
-                            </div>
-                            <div class="flex justify-between px-4 py-2 cursor-pointer sm:gap-4 sm:px-0">
-                                <p
-                                    class=" hover:translate-x-1.5 transition text-sm font-medium leading-6 text-gray-900">
-                                    Compra un automóvil</p>
-                                <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    <i class="px-3 fa-solid fa-arrow-right"></i>
-                                </p>
-                            </div>
-                            <div class="flex justify-between px-4 py-2 cursor-pointer sm:gap-4 sm:px-0">
-                                <p
-                                    class=" hover:translate-x-1.5 transition text-sm font-medium leading-6 text-gray-900">
-                                    Fletes y mudanzas</p>
-                                <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    <i class="px-3 fa-solid fa-arrow-right"></i>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-center p-4 mt-auto">
-                            <a href="{{ url('/vivir/argentina') }}"
-                                class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t hover:border-b-[#47108E] hover:border-t-[#3CEBA7] hover:border-s-[#3CEBA7] hover:border-e-[#3CEBA7] hover:text-white hover:bg-[#3CEBA7]">
-                                Más información
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col overflow-hidden bg-white rounded drop-shadow-md">
-                    <p class="text-center py-3 text-2xl font-black text-white bg-[#47108E]">Educación</p>
-                    <div class="h-60">
-                        <img class="object-cover w-full h-full" src="{{ asset('images/argentina/educacion.jpg') }}"
+                    <p class="text-center py-3 text-2xl font-black text-white bg-[#47108E]">Mundo laboral</p>
+                </a>
+                <a href="{{ url('/health-care/argentina') }}" class="flex flex-col overflow-hidden bg-white rounded drop-shadow-md">
+                    <div class="h-64">
+                        <img class="object-cover w-full h-full" src="{{ asset('images/argentina/healt-care.jpg') }}"
                             alt="educacion">
                     </div>
-                    <div class="flex flex-col h-full p-3 bg-[#F9F9F9]">
-                        <div class="divide-y divide-gray-100">
-                            <div class="flex justify-between px-4 py-2 cursor-pointer sm:gap-4 sm:px-0">
-                                <p
-                                    class=" hover:translate-x-1.5 transition text-sm font-medium leading-6 text-gray-900">
-                                    Estudiar en Argentina</p>
-                                <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    <i class="px-3 fa-solid fa-arrow-right"></i>
-                                </p>
-                            </div>
-                            <div class="flex justify-between px-4 py-2 cursor-pointer sm:gap-4 sm:px-0">
-                                <p
-                                    class=" hover:translate-x-1.5 transition text-sm font-medium leading-6 text-gray-900">
-                                    Escuelas y universidades</p>
-                                <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    <i class="px-3 fa-solid fa-arrow-right"></i>
-                                </p>
-                            </div>
-                            <div class="flex justify-between px-4 py-2 cursor-pointer sm:gap-4 sm:px-0">
-                                <p
-                                    class=" hover:translate-x-1.5 transition text-sm font-medium leading-6 text-gray-900">
-                                    Aprender español</p>
-                                <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    <i class="px-3 fa-solid fa-arrow-right"></i>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-center p-4 mt-auto">
-                            <a href="{{ url('/educacion/argentina') }}"
-                                class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t hover:border-b-[#47108E] hover:border-t-[#3CEBA7] hover:border-s-[#3CEBA7] hover:border-e-[#3CEBA7] hover:text-white hover:bg-[#3CEBA7]">
-                                Más información
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                    <p class="text-center py-3 text-2xl font-black text-white bg-[#47108E]">Health Care</p>
+                </a>
                 {{-- --}}
+                <a href="{{ url('/carnet-de-conducir/argentina') }}" class="flex flex-col overflow-hidden bg-white rounded drop-shadow-md">
+                    <div class="h-64">
+                        <img class="object-cover w-full h-full" src="{{ asset('images/argentina/carnet-de-conducir.jpg') }}"
+                            alt="carnet-de-conducir">
+                    </div>
+                    <p class="text-center py-3 text-2xl font-black text-white bg-[#47108E]">Carnet de conducir</p>
+                </a>
                 <div class="flex flex-col overflow-hidden bg-white rounded drop-shadow-md">
-                    <p class="text-center py-3 text-2xl font-black text-white bg-[#47108E]">Trabajar en Argentina</p>
-                    <div class="h-60">
-                        <img class="object-cover w-full h-full" src="{{ asset('images/argentina/trabajar.jpg') }}"
-                            alt="">
+                    <div class="h-64">
+                        <img class="object-cover w-full h-full" src="{{ asset('images/argentina/mudanza.jpg') }}"
+                            alt="mudanza">
                     </div>
-                    <div class="flex flex-col h-full p-3 bg-[#F9F9F9]">
-                        <div class="divide-y divide-gray-100">
-                            <div class="flex justify-between px-4 py-2 cursor-pointer sm:gap-4 sm:px-0">
-                                <p
-                                    class=" hover:translate-x-1.5 transition text-sm font-medium leading-6 text-gray-900">
-                                    Buscar trabajos en Argentina</p>
-                                <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    <i class="px-3 fa-solid fa-arrow-right"></i>
-                                </p>
-                            </div>
-                            <div class="flex justify-between px-4 py-2 cursor-pointer sm:gap-4 sm:px-0">
-                                <p
-                                    class=" hover:translate-x-1.5 transition text-sm font-medium leading-6 text-gray-900">
-                                    Impuestos para autónomos y monotributistas en Argentina</p>
-                                <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    <i class="px-3 fa-solid fa-arrow-right"></i>
-                                </p>
-                            </div>
-                            <div class="flex justify-between px-4 py-2 cursor-pointer sm:gap-4 sm:px-0">
-                                <p
-                                    class=" hover:translate-x-1.5 transition text-sm font-medium leading-6 text-gray-900">
-                                    Comienza tu emprendimiento</p>
-                                <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    <i class="px-3 fa-solid fa-arrow-right"></i>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-center p-4 mt-auto">
-                            <a href="{{ url('/desarrolla-tu-futuro/argentina#trabaja') }}"
-                                class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t hover:border-b-[#47108E] hover:border-t-[#3CEBA7] hover:border-s-[#3CEBA7] hover:border-e-[#3CEBA7] hover:text-white hover:bg-[#3CEBA7]">
-                                Más información
-                            </a>
-                        </div>
-                    </div>
+                    <p class="text-center py-3 text-2xl font-black text-white bg-[#47108E]">Mudanzas/Relocalizacion</p>
                 </div>
                 <div class="flex flex-col overflow-hidden bg-white rounded drop-shadow-md">
-                    <p class="text-center py-3 text-2xl font-black text-white bg-[#47108E]">Finanzas y economía</p>
-                    <div class="h-60">
-                        <img class="object-cover w-full h-full" src="{{ asset('images/argentina/vivir.jpg') }}"
-                            alt="vivir">
+                    <div class="h-64">
+                        <img class="object-cover w-full h-full" src="{{ asset('images/argentina/alojamiento.jpg') }}"
+                            alt="Alojamiento">
                     </div>
-                    <div class="flex flex-col h-full p-3 bg-[#F9F9F9]">
-                        <div class="divide-y divide-gray-100">
-                            <div class="flex justify-between px-4 py-2 cursor-pointer sm:gap-4 sm:px-0">
-                                <p
-                                    class=" hover:translate-x-1.5 transition text-sm font-medium leading-6 text-gray-900">
-                                    Cómo abrir una cuenta bancaria</p>
-                                <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    <i class="px-3 fa-solid fa-arrow-right"></i>
-                                </p>
-                            </div>
-                            <div class="flex justify-between px-4 py-2 cursor-pointer sm:gap-4 sm:px-0">
-                                <p
-                                    class=" hover:translate-x-1.5 transition text-sm font-medium leading-6 text-gray-900">
-                                    Seguros en Argentina</p>
-                                <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    <i class="px-3 fa-solid fa-arrow-right"></i>
-                                </p>
-                            </div>
-                            <div class="flex justify-between px-4 py-2 cursor-pointer sm:gap-4 sm:px-0">
-                                <p
-                                    class=" hover:translate-x-1.5 transition text-sm font-medium leading-6 text-gray-900">
-                                    Sistema de impuestos en Argentina</p>
-                                <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    <i class="px-3 fa-solid fa-arrow-right"></i>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-center p-4 mt-auto">
-                            <a href="{{ url('/finanzas-economia/argentina') }}"
-                                class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t hover:border-b-[#47108E] hover:border-t-[#3CEBA7] hover:border-s-[#3CEBA7] hover:border-e-[#3CEBA7] hover:text-white hover:bg-[#3CEBA7]">
-                                Más información
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col overflow-hidden bg-white rounded drop-shadow-md">
-                    <p class="text-center py-3 text-2xl font-black text-white bg-[#47108E]">Salud</p>
-                    <div class="h-60">
-                        <img class="object-cover w-full h-full" src="{{ asset('images/argentina/salud.jpg') }}"
-                            alt="salud">
-                    </div>
-                    <div class="flex flex-col h-full p-3 bg-[#F9F9F9]">
-                        <div class="divide-y divide-gray-100">
-                            <div class="flex justify-between px-4 py-2 cursor-pointer sm:gap-4 sm:px-0">
-                                <p
-                                    class=" hover:translate-x-1.5 transition text-sm font-medium leading-6 text-gray-900">
-                                    Seguros médicos para expatriados</p>
-                                <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    <i class="px-3 fa-solid fa-arrow-right"></i>
-                                </p>
-                            </div>
-                            <div class="flex justify-between px-4 py-2 cursor-pointer sm:gap-4 sm:px-0">
-                                <p
-                                    class=" hover:translate-x-1.5 transition text-sm font-medium leading-6 text-gray-900">
-                                    Conseguir cobertura médica</p>
-                                <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    <i class="px-3 fa-solid fa-arrow-right"></i>
-                                </p>
-                            </div>
-                            <div class="flex justify-between px-4 py-2 cursor-pointer sm:gap-4 sm:px-0">
-                                <p
-                                    class=" hover:translate-x-1.5 transition text-sm font-medium leading-6 text-gray-900">
-                                    Hospitales gratuitos en Argentina</p>
-                                <p class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                    <i class="px-3 fa-solid fa-arrow-right"></i>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-center p-4 mt-auto">
-                            <a href="{{ url('/salud/argentina') }}"
-                                class="text-[#47108E] font-bold py-3 w-2/4 text-center border-2 border-b-[#3CEBA7] border-t-[#47108E] border-s-[#47108E] border-e-[#47108E] rounded-t hover:border-b-[#47108E] hover:border-t-[#3CEBA7] hover:border-s-[#3CEBA7] hover:border-e-[#3CEBA7] hover:text-white hover:bg-[#3CEBA7]">
-                                Más información
-                            </a>
-                        </div>
-                    </div>
+                    <p class="text-center py-3 text-2xl font-black text-white bg-[#47108E]">Alojamiento</p>
                 </div>
             </div>
         </div>
     </section>
     {{-- SPOTLIGHT --}}
-    <section class="bg-[#3CEBA7]">
-        <div class="grid font-black text-lg text-[#3C137C] lg:grid-cols-[1.5fr_1fr_1fr] lg:h-[570px]">
+    <section class="bg-[#43ECB1]">
+        <div class="grid font-black text-lg text-white lg:grid-cols-[1.5fr_1fr_1fr] lg:h-[570px]">
             <div
                 class="flex items-center flex-col justify-center bg-spotlight-pattern bg-[left_0%] lg:bg-[left_-24%] py-12 lg:py-0">
-                <img class="w-5/6" src="{{ asset('images/spotlight/spotlight-text.svg') }}" alt="">
+                <p class="text-2xl font-black lg:leading-tight lg:text-5xl">Entérate de la <br>diversión <br>en <span class="text-[#3C137C]">ARGENTINA</span></p>
+            </div>
+            <a href="{{ url('/turismo/argentina') }}"
+                class="relative flex flex-col items-center justify-end isolate min-h-[300px]">
+                <p
+                    class="w-2/3 lg:w-1/3 flex justify-center py-2 rounded-t-md px-6 bg-[#25E59B] hover:bg-white transition hover:text-[#3C137C]">
+                    Turismo</p>
+                <img src="{{ asset('images/spotlight/turismo.jpg') }}" alt="Turismo"
+                    class="absolute inset-0 object-cover w-full h-full -z-10">
+            </a>
+            <a href="{{ url('/entretenimiento/argentina') }}"
+                class="relative flex flex-col items-center justify-end isolate min-h-[300px]">
+                <p
+                    class="w-2/3 lg:w-1/3 flex justify-center py-2 rounded-t-md px-6 bg-[#25E59B] hover:bg-white transition hover:text-[#3C137C]">
+                    Entretenimiento</p>
+                <img src="{{ asset('images/spotlight/entretenimiento.jpg') }}" alt="entretenimiento"
+                    class="absolute inset-0 object-cover w-full h-full -z-10">
+            </a>
+        </div>
+    </section>
+     {{-- Conoce más--}}
+     <section class="py-12 bg-white">
+        <div class="max-w-screen-lg px-4 mx-auto my-auto sm:px-6 lg:px-8">
+            <p class="mb-6 text-xl font-black text-center text-[#3C137C] lg:text-3xl">Conoce más
+            </p>
+            <div class="grid justify-center gap-4 text-lg font-black text-white lg:grid-cols-3 lg:text-2xl">
+                <a href="{{ url('/en-movimiento/argentina') }}" class="overflow-hidden rounded hover:shadow-md">
+                    <img class="object-cover h-64 w-72" src="{{ asset('images/conoce-mas/en-movimiento.jpg') }}" alt="movimiento">
+                    <p class="text-center w-full py-2 lg:py-4 bg-[#3C137C]">En movimiento</p>
+                </a>
+                <a href="{{ url('/venta-en/argentina') }}" class="overflow-hidden rounded hover:shadow-md">
+                    <img class="object-cover h-64 w-72" src="{{ asset('images/conoce-mas/asesoria-juridica.jpg') }}" alt="Asesoria Jurídica">
+                    <p class="text-center w-full py-2 lg:py-4 bg-[#3C137C]">Asesoria Jurídica</p>
+                </a>
+                <a href="{{ url('/renta-en/argentina') }}" class="overflow-hidden rounded hover:shadow-md">
+                    <img class="object-cover h-64 w-72" src="{{ asset('images/conoce-mas/telefonia-internet.jpg') }}" alt="telefonia internet">
+                    <p class="text-center w-full py-2 lg:py-4 bg-[#3C137C]">Telefonía/Internet</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    {{-- SPOTLIGHT 2 --}}
+    <section class="bg-[#25E59B]">
+        <div class="grid font-black text-lg text-white lg:grid-cols-[1.5fr_1fr_1fr] lg:h-[570px]">
+            <div
+                class="flex items-center flex-col justify-center bg-spotlight-pattern bg-[left_0%] lg:bg-[left_-24%] py-12 lg:py-0">
+                <p class="text-2xl font-black lg:leading-tight lg:text-5xl">¿Cómo y dónde <br>realizar tus <br>tramites?</p>
             </div>
             <a href="{{ url('/desarrolla-tu-futuro/argentina#trabaja') }}"
                 class="relative flex flex-col items-center justify-end isolate min-h-[300px]">
                 <p
-                    class="w-1/3 flex justify-center p-5 px-6 bg-[#3CEBA7] hover:bg-white transition hover:text-[#3CEBA7]">
-                    Trabaja</p>
-                <img src="{{ asset('images/spotlight/trabaja.jpg') }}" alt=""
+                    class="w-2/3 lg:w-1/3  flex justify-center py-2 rounded-t-md px-6 bg-[#25E59B] hover:bg-white transition hover:text-[#3C137C]">
+                    Bancos</p>
+                <img src="{{ asset('images/spotlight/banco.jpg') }}" alt=""
                     class="absolute inset-0 object-cover w-full h-full -z-10">
             </a>
             <a href="{{ url('/desarrolla-tu-futuro/argentina#estudia') }}"
                 class="relative flex flex-col items-center justify-end isolate min-h-[300px]">
                 <p
-                    class="w-1/3 flex justify-center p-5 px-6 bg-[#3CEBA7] hover:bg-white transition hover:text-[#3CEBA7]">
-                    Estudia</p>
-                <img src="{{ asset('images/spotlight/estudia.jpg') }}" alt=""
+                    class="w-2/3 lg:w-1/3  flex justify-center py-2 rounded-t-md text-center px-6 bg-[#25E59B] hover:bg-white transition hover:text-[#3C137C] leading-4">
+                    Transferencia <br>de dinero</p>
+                <img src="{{ asset('images/spotlight/transferencia-de-dinero.jpg') }}" alt="transferencia de dinero"
                     class="absolute inset-0 object-cover w-full h-full -z-10">
             </a>
+        </div>
+    </section>
+    {{-- Encontrá tu mejor servicio --}}
+    <section class="py-12 bg-white">
+        <div id="conoce-argentina" class="max-w-screen-lg px-4 mx-auto my-auto sm:px-6 lg:px-8">
+            <p class="mb-6 text-xl font-black text-center text-[#3C137C] lg:text-3xl">
+                Encontrá tu mejor servicio
+            </p>
+            <div class="grid gap-3 font-black text-white gap-y-6 lg:grid-cols-2">
+                <div class="flex flex-col overflow-hidden bg-white rounded drop-shadow-md">
+                    <div class="h-64">
+                        <img class="object-cover w-full h-full" src="{{ asset('images/argentina/empresas-que-contratan.jpg') }}"
+                            alt="empresas que contratan">
+                    </div>
+                    <p class="text-center py-3 text-2xl font-black text-white bg-[#47108E]">Empresas que contratan</p>
+                </div>
+                <div class="flex flex-col overflow-hidden bg-white rounded drop-shadow-md">
+                    <div class="h-64">
+                        <img class="object-cover w-full h-full" src="{{ asset('images/argentina/servicio-domestico.jpg') }}"
+                            alt="niñeras Servicio Domestica">
+                    </div>
+                    <p class="text-center py-3 text-2xl font-black text-white bg-[#47108E]">Niñeras/Servicio Domestica</p>
+                </div>
+                {{-- --}}
+                <div class="flex flex-col overflow-hidden bg-white rounded drop-shadow-md">
+                    <div class="h-64">
+                        <img class="object-cover w-full h-full" src="{{ asset('images/argentina/apoyo-psicologico.jpg') }}"
+                            alt="apoyo psicológico">
+                    </div>
+                    <p class="text-center py-3 text-2xl font-black text-white bg-[#47108E]">Apoyo Psicológico</p>
+                </div>
+                <div class="flex flex-col overflow-hidden bg-white rounded drop-shadow-md">
+                    <div class="h-64">
+                        <img class="object-cover w-full h-full" src="{{ asset('images/argentina/idiomas.jpg') }}"
+                            alt="idiomas">
+                    </div>
+                    <p class="text-center py-3 text-2xl font-black text-white bg-[#47108E]">Idiomas/Intercambio</p>
+                </div>
+            </div>
         </div>
     </section>
     {{-- SANTANDER --}}
@@ -446,23 +258,7 @@
             </a>
         </div>
     </section>
-    {{-- Encontra tu casa --}}
-    <section class="pb-12 bg-white">
-        <div class="max-w-screen-lg px-4 mx-auto my-auto sm:px-6 lg:px-8">
-            <p class="mb-6 text-xl font-black text-center text-[#3C137C] lg:text-3xl">Te ayudamos a encontrar tu casa
-            </p>
-            <div class="flex justify-center gap-4 text-lg font-black text-white lg:text-2xl">
-                <a href="{{ url('/renta-en/argentina') }}" class="overflow-hidden rounded hover:shadow-md">
-                    <img class="object-cover w-full" src="{{ asset('images/casa/renta.jpg') }}" alt="renta">
-                    <p class="text-center w-full py-2 lg:py-4 bg-[#3C137C]">Renta</p>
-                </a>
-                <a href="{{ url('/venta-en/argentina') }}" class="overflow-hidden rounded hover:shadow-md">
-                    <img class="object-cover w-full" src="{{ asset('images/casa/compra.jpg') }}" alt="compra">
-                    <p class="text-center w-full py-2 lg:py-4 bg-[#3C137C]">Compra</p>
-                </a>
-            </div>
-        </div>
-    </section>
+
     <section class="pb-12">
         <div x-data="{ imgModal : false, imgModalSrc : '' }"
             class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">

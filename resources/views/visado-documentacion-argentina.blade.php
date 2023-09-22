@@ -1,6 +1,6 @@
 <x-app-layout>
     {{-- HERO --}}
-    <section class="min-h-[350px] h-[400px] bg-salud bg-no-repeat bg-center bg-cover">
+    <section class="min-h-[350px] h-[400px] bg-visado-documentacion bg-no-repeat bg-center bg-cover">
         <div class="flex flex-col justify-end h-full max-w-screen-lg px-4 pb-16 mx-auto my-auto sm:px-6 lg:px-8">
             <h1 class="text-4xl font-black text-white uppercase lg:text-7xl leading-[.9_!important]">
                 Visado<br> y documentación
@@ -12,26 +12,30 @@
     <section class="py-12 bg-white">
         <div class="max-w-screen-lg px-4 mx-auto my-auto sm:px-6 lg:px-8">
             <article id="trabaja" class="">
-                <div class="">
-                    <h2 class="mb-6 text-[#3C137C] font-bold text-4xl">Antes de viajar</h2>
+                <div class="text-black">
+                    <h2 class="mb-6 text-[#3C137C] font-bold text-4xl">/Antes de viajar</h2>
                     <p class="mb-4">
                         Si planeas viajar o vivir en Argentina deberás reunir cierta documentación antes de llegar a
                         destino.<br><br> Existen diferentes tipos de visas, que se clasifican de acuerdo a la actividad
                         o los motivos que te llevan al país sudamericano, así como también distintos tipos de
                         residencias, que se agrupan según el tiempo de permanencia en el país.<br><br> Aquí te acercamos
                         toda la información necesaria para hacer de tu viaje un trámite más sencillo.<br><br>
-                        Documentación general<br> Ten a mano la siguiente documentación para gestionar cualquier tipo de
-                        trámite en Argentina:<br><br>
-                        > Pasaporte válido con vigencia mínima de 6 meses a la fecha de ingreso al país<br>
-                        > Cédula de identidad<br>
-                        > Formulario de solicitud de visa completo<br>
-                        > Constancia que acredite la actividad a desarrollar en el país de origen<br>
-                        > Reserva de pasaje de ida y vuelta<br>
-                        > Reserva hotelera o comprobante de alojamiento<br>
-                        > Entrevista consular.<br><br>
 
-                        Todas las solicitudes son personales, y deberás presentar la documentación requerida en cada
-                        caso ante el Consulado correspondiente (ver Embajadas).
+                    <h2 class="text-[#3C137C] font-bold text-2xl">Documentación general</h2>
+                    Ten a mano la siguiente documentación para gestionar cualquier tipo de
+                    trámite en Argentina:<br><br>
+                    <ul class="mb-4 list-disc list-inside">
+                        <li>Pasaporte válido con vigencia mínima de 6 meses a la fecha de ingreso al país</li>
+                        <li>Cédula de identidad</li>
+                        <li>Formulario de solicitud de visa completo</li>
+                        <li>Constancia que acredite la actividad a desarrollar en el país de origen</li>
+                        <li>Reserva de pasaje de ida y vuelta</li>
+                        <li>Reserva hotelera o comprobante de alojamiento</li>
+                        <li>Entrevista consular.</li>
+                    </ul>
+
+                    Todas las solicitudes son personales, y deberás presentar la documentación requerida en cada
+                    caso ante el Consulado correspondiente (ver Embajadas).
                     </p>
 
                     <h2 class="mb-6 text-[#3C137C] font-bold text-4xl">Residencias</h2>
@@ -81,24 +85,25 @@
 
                     <h3 class="mb-4 text-[#3C137C] font-bold text-2xl">Trabajo</h3>
                     <p class="mb-4">
-                        Trabajo: dirigida a quienes acrediten haber recibido una oferta laboral dentro del territorio.<br>
-Costo: $250 (mayo 2023).<br>
-Tasa migratoria: U$S300 para ciudadanos del MERCOSUR y U$S600 para ciudadanos EXTRA-MERCOSUR.
+                        Trabajo: dirigida a quienes acrediten haber recibido una oferta laboral dentro del
+                        territorio.<br>
+                        Costo: $250 (mayo 2023).<br>
+                        Tasa migratoria: U$S300 para ciudadanos del MERCOSUR y U$S600 para ciudadanos EXTRA-MERCOSUR.
                     </p>
 
                     <h3 class="mb-4 text-[#3C137C] font-bold text-2xl">Nacionalidad</h3>
                     <p class="mb-4">
-                        Nacionalidad: dirigida a expats provenientes de los Estado Parte o MERCOSUR por un plazo de 2 años.
-Costo: $250 (mayo 2023)<br><br>
-Tasa migratoria: U$S 300 para ciudadanos del Mercosur y U$S 600 para ciudadanos extra-Mercosur.
-
+                        Nacionalidad: dirigida a expats provenientes de los Estado Parte o MERCOSUR por un plazo de 2
+                        años.
+                        Costo: $250 (mayo 2023)<br>
+                        Tasa migratoria: U$S 300 para ciudadanos del Mercosur y U$S 600 para ciudadanos extra-Mercosur.
                     </p>
-
-
                 </div>
             </article>
             <div class="my-6 text-center">
-                <a href="{{ route('argentina') }}" class="mx-auto block w-full lg:w-max rounded-sm px-0 lg:px-10 py-3 shadow-md bg-[#3C137C] font-medium text-2xl text-white">Volver atrás</a>
+                <a href="{{ route('argentina') }}" class="mx-auto block w-full lg:w-max rounded-xl px-0 lg:px-4 py-3 shadow-lg bg-[#3C137C] font-bold text-xl text-white">
+                    Volver atrás
+                </a>
             </div>
         </div>
     </section>
