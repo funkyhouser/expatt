@@ -54,10 +54,6 @@
                       <img class="w-6" src="{{ asset('images/flags/mexico.png') }}">
                     </x-nav-link>
                 @endif
-
-
-                <x-nav-link href="{{ url('/vivir-en/argentina') }}" class="pr-0">
-                </x-nav-link>
             @endif
         </div>
 
@@ -88,33 +84,39 @@
                     Conviértete en Sponsor
                 </x-responsive-nav-link>
             @else
-
-                <x-responsive-nav-link href="{{ url('/vivir-en/argentina#conoce-argentina') }}" :active="request()->routeIs('dashboard')">
-                    Conoce Argentina
-                </x-responsive-nav-link>
-                <x-responsive-nav-link href="{{ url('/vivir-en/argentina#informacion-util') }}" :active="request()->routeIs('dashboard')">
-                    Información útil
-                </x-responsive-nav-link>
-                <x-responsive-nav-link href="{{ url('/vivir-en/argentina#conoce-argentina') }}" :active="request()->routeIs('dashboard')">
-                    Comienza
-                </x-responsive-nav-link>
-                <x-responsive-nav-link href="{{ url('/vivir-en/argentina#disfruta') }}" :active="request()->routeIs('dashboard')">
-                    Disfruta
-                </x-responsive-nav-link>
-                <x-responsive-nav-link href="#" :active="request()->routeIs('dashboard')">
-                    Asistencia
-                </x-responsive-nav-link>
-                <div class="inline-flex">
-                    <x-responsive-nav-link href="#" :active="request()->routeIs('dashboard')" class="pl-2 pr-2 ">
-                        <i class="fa-solid fa-user text-[#25E59B] hover:text-white"></i>
+                @if (request()->is('*/argentina'))
+                    <x-responsive-nav-link href="{{ url('/vivir-en/argentina#conoce-argentina') }}" :active="request()->routeIs('dashboard')">
+                        Conoce Argentina
                     </x-responsive-nav-link>
-                    <x-responsive-nav-link href="#" :active="request()->routeIs('dashboard')" class="pl-2 pr-2 ">
-                        <i class="fa-solid fa-bell text-[#25E59B] hover:text-white"></i>
+                    <x-responsive-nav-link href="{{ url('/vivir-en/argentina#informacion-util') }}" :active="request()->routeIs('dashboard')">
+                        Información útil
                     </x-responsive-nav-link>
-                    <x-responsive-nav-link href="#" :active="request()->routeIs('dashboard')"  class="pl-2 pr-0">
-                        <i class="fa-solid fa-magnifying-glass text-[#25E59B] hover:text-white"></i>
+                    <x-responsive-nav-link href="{{ url('/vivir-en/argentina#conoce-argentina') }}" :active="request()->routeIs('dashboard')">
+                        Comienza
                     </x-responsive-nav-link>
-                </div>
+                    <x-responsive-nav-link href="{{ url('/vivir-en/argentina#disfruta') }}" :active="request()->routeIs('dashboard')">
+                        Disfruta
+                    </x-responsive-nav-link>
+                    <x-responsive-nav-link href="{{ url('/vivir-en/argentina') }}" class="pr-0">
+                        <img class="w-6" src="{{ asset('images/flags/argentina.png') }}">
+                    </x-responsive-nav-link>
+                @else
+                    <x-responsive-nav-link href="{{ url('/vivir-en/mexico#conoce-mexico') }}" :active="request()->routeIs('dashboard')">
+                        Conoce México
+                    </x-responsive-nav-link>
+                    <x-responsive-nav-link href="{{ url('/vivir-en/mexico#informacion-util') }}" :active="request()->routeIs('dashboard')">
+                        Información útil
+                    </x-responsive-nav-link>
+                    <x-responsive-nav-link href="{{ url('/vivir-en/mexico#conoce-mexico') }}" :active="request()->routeIs('dashboard')">
+                        Comienza
+                    </x-responsive-nav-link>
+                    <x-responsive-nav-link href="{{ url('/vivir-en/mexico#disfruta') }}" :active="request()->routeIs('dashboard')">
+                        Disfruta
+                    </x-responsive-nav-link>
+                    <x-responsive-nav-link href="{{ url('/vivir-en/mexico') }}" class="pr-0">
+                      <img class="w-6" src="{{ asset('images/flags/mexico.png') }}">
+                    </x-responsive-nav-link>
+                @endif
             @endif
         </div>
 
