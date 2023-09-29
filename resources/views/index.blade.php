@@ -17,7 +17,7 @@
                     <div class="flex flex-wrap -mx-4 text-xs lg:-mx-2 lg:text-sm">
                         {{-- Mex --}}
                         <div class="flex flex-col justify-center w-1/2 px-1 mb-2 lg:px-2 lg:w-1/3">
-                            <a href="#"
+                            <a href="{{ route('mexico') }}"
                                 class="flex items-center justify-between overflow-hidden bg-white rounded group/dondevivir">
                                 <div class="flex items-center p-3">
                                     <img class="mr-2" src="{{ asset('images/flags/mexico.png') }}"
@@ -451,7 +451,7 @@
             </div>
         </div>
     </section> --}}
-    <section class="py-12">
+    <section class="py-12 bg-white">
         <div x-data="{ imgModal : false, imgModalSrc : '' }"
             class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
             <p class="text-[#3C137C] font-black text-xl lg:text-3xl text-center mb-6">Explora la galería de fotos de

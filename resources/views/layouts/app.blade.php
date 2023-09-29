@@ -26,7 +26,7 @@
     </style>
 
 
-<body class="min-h-screen font-sans antialiased text-[#636363]">
+<body class="min-h-screen font-sans antialiased text-[#636363] bg-[#3c137c]">
 
     <div class="z-50 flex-col hidden transform -translate-y-1/2 right-5 lg:fixed lg:flex top-1/2">
         <div class="flex flex-col items-center px-2 py-4 space-y-4 text-white bg-black/25 rounded-2xl">
@@ -36,7 +36,8 @@
             <i class="cursor-pointer fa-brands fa-x-twitter"></i>
             <i class="cursor-pointer fa-brands fa-youtube"></i>
             <i class="cursor-pointer fa-brands fa-tiktok"></i>
-     </div>    </div>
+        </div>
+    </div>
     {{-- <x-banner /> --}}
 
     @livewire('navigation-menu')
@@ -55,26 +56,23 @@
         {{ $slot }}
     </main>
     <footer class="bg-[#3C137C] py-6 lg:py-12 text-white">
-        <div class="flex justify-between max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
-            <div class="flex flex-col">
-                <img src="{{ asset('images/logo.svg') }}" class="mb-6" alt="Soy EXPAT" />
-                <p class="text-xs">© Soy Expat, 2023</p>
-            </div>
-            <div class="flex flex-col space-x-4 text-[#3C137C]">
-                <div class="flex justify-end mb-6 space-x-5">
+        <div class="flex flex-col max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
+            <div class="flex justify-between mb-6">
+                <img src="{{ asset('images/logo.svg') }}" alt="Soy EXPAT" />
+                <div class="flex justify-end space-x-5">
                     <img src="{{ asset('images/social/facebook.svg') }}" alt="facebook" />
-                    <img src="{{ asset('images/social/linkedin.svg') }}" alt="linkedin" />
                     <img src="{{ asset('images/social/instagram.svg') }}" alt="instagram" />
+                    <img src="{{ asset('images/social/linkedin.svg') }}" alt="linkedin" />
                 </div>
-                <div class="flex flex-col lg:space-x-5 lg:flex-row">
-                    <a href="#" class="mb-2 text-xs font-bold text-white lg:mb-0">Términos y condiciones</a>
-                    <a href="#" class="text-xs font-bold text-white">Política de privacidad</a>
-                </div>
+            </div>
+            <div class="flex justify-between text-xs font-bold text-white lg:justify-end lg:space-x-5">
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
             </div>
         </div>
     </footer>
-    <div class="bg-[#25E59B] py-4 text-center">
-        <p class="uppercase text-[10px] text-[#3C137C] font-extrabold">powered by casakiev</p>
+    <div class="bg-[#25E59B] py-3 text-center">
+        <a href="https://www.casakiev.com/" target="_blank" class="uppercase text-[10px] text-[#3C137C] font-extrabold">powered by casakiev</a>
     </div>
     @stack('modals')
 
