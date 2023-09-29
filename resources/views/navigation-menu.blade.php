@@ -21,24 +21,42 @@
                     Conviértete en Sponsor
                 </x-nav-link>
             @else
-                <x-nav-link href="{{ url('/vivir-en/argentina#conoce-argentina') }}" :active="request()->routeIs('dashboard')">
-                    Conoce Argentina
-                </x-nav-link>
-                <x-nav-link href="{{ url('/vivir-en/argentina#informacion-util') }}" :active="request()->routeIs('dashboard')">
-                    Información útil
-                </x-nav-link>
-                <x-nav-link href="{{ url('/vivir-en/argentina#conoce-argentina') }}" :active="request()->routeIs('dashboard')">
-                    Comienza
-                </x-nav-link>
-                <x-nav-link href="{{ url('/vivir-en/argentina#disfruta') }}" :active="request()->routeIs('dashboard')">
-                    Disfruta
-                </x-nav-link>
-                <x-nav-link href="{{ url('/vivir-en/argentina') }}" class="pr-0">
-                    @if (request()->is('*/argentina'))
+                @if (request()->is('*/argentina'))
+                    <x-nav-link href="{{ url('/vivir-en/argentina#conoce-argentina') }}" :active="request()->routeIs('dashboard')">
+                        Conoce Argentina
+                    </x-nav-link>
+                    <x-nav-link href="{{ url('/vivir-en/argentina#informacion-util') }}" :active="request()->routeIs('dashboard')">
+                        Información útil
+                    </x-nav-link>
+                    <x-nav-link href="{{ url('/vivir-en/argentina#conoce-argentina') }}" :active="request()->routeIs('dashboard')">
+                        Comienza
+                    </x-nav-link>
+                    <x-nav-link href="{{ url('/vivir-en/argentina#disfruta') }}" :active="request()->routeIs('dashboard')">
+                        Disfruta
+                    </x-nav-link>
+                    <x-nav-link href="{{ url('/vivir-en/argentina') }}" class="pr-0">
                         <img class="w-6" src="{{ asset('images/flags/argentina.png') }}">
-                    @else
-                        <img class="w-6" src="{{ asset('images/flags/mexico.png') }}">
-                    @endif
+                    </x-nav-link>
+                @else
+                    <x-nav-link href="{{ url('/vivir-en/mexico#conoce-mexico') }}" :active="request()->routeIs('dashboard')">
+                        Conoce México
+                    </x-nav-link>
+                    <x-nav-link href="{{ url('/vivir-en/mexico#informacion-util') }}" :active="request()->routeIs('dashboard')">
+                        Información útil
+                    </x-nav-link>
+                    <x-nav-link href="{{ url('/vivir-en/mexico#conoce-mexico') }}" :active="request()->routeIs('dashboard')">
+                        Comienza
+                    </x-nav-link>
+                    <x-nav-link href="{{ url('/vivir-en/mexico#disfruta') }}" :active="request()->routeIs('dashboard')">
+                        Disfruta
+                    </x-nav-link>
+                    <x-nav-link href="{{ url('/vivir-en/mexico') }}" class="pr-0">
+                      <img class="w-6" src="{{ asset('images/flags/mexico.png') }}">
+                    </x-nav-link>
+                @endif
+
+
+                <x-nav-link href="{{ url('/vivir-en/argentina') }}" class="pr-0">
                 </x-nav-link>
             @endif
         </div>

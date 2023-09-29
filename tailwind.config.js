@@ -23,6 +23,7 @@ export default {
                 'hero-pattern': "url('/public/images/hero-pattern.svg')",
 
                 'banner-argentina': "url('/public/images/argentina/banner-argentina.jpg')",
+                'banner-mexico': "url('/public/images/mexico/mexico.jpg')",
 
                 'visado-documentacion': "url('/public/images/banners/visado.jpg')",
                 'informacion': "url('/public/images/banners/informacion.jpg')",
