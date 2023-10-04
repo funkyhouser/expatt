@@ -59,7 +59,7 @@ OCC: click <a class="text-blue-700" href="https://www.occ.com.mx/empleos/en-mexi
             </article>
             <div class="my-6 text-center">
                 <a href="{{ route('mexico') }}" class="mx-auto block w-full lg:w-max rounded-xl px-0 lg:px-4 py-3 shadow-lg bg-[#3C137C] font-bold text-xl text-white">
-                    Volvers
+                    Volver
                 </a>
             </div>
         </div>
@@ -67,7 +67,7 @@ OCC: click <a class="text-blue-700" href="https://www.occ.com.mx/empleos/en-mexi
     {{-- SANTANDER --}}
     <section class="pb-12 bg-white">
         <div class="mx-auto my-auto lg:max-w-screen-lg sm:px-6 lg:px-8">
-            <a href="#" class="grid bg-[#402D97] lg:grid-cols-3 group/santander">
+            <a href="#" class="grid bg-[#402D97] lg:grid-cols-3 group/santander overflow-hidden">
                 <div class="relative col-span-2 bg-cover bg-santander-pattern h-80">
                     <img class="absolute bottom-0 max-w-sm -right-[42%] lg:right-auto lg:-translate-x-1/2 lg:left-1/2"
                         src="{{ asset('images/santander/santander-girl.png') }}" alt="santander">

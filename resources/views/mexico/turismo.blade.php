@@ -74,7 +74,7 @@ Ubicado en Ciudad de México, es posible hacer un tour por el estadio más grand
     {{-- SANTANDER --}}
     <section class="pb-12 bg-white">
         <div class="mx-auto my-auto lg:max-w-screen-lg sm:px-6 lg:px-8">
-            <a href="#" class="grid bg-[#402D97] lg:grid-cols-3 group/santander">
+            <a href="#" class="grid bg-[#402D97] lg:grid-cols-3 group/santander overflow-hidden">
                 <div class="relative col-span-2 bg-cover bg-santander-pattern h-80">
                     <img class="absolute bottom-0 max-w-sm -right-[42%] lg:right-auto lg:-translate-x-1/2 lg:left-1/2"
                         src="{{ asset('images/santander/santander-girl.png') }}" alt="santander">
