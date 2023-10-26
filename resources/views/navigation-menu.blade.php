@@ -17,7 +17,7 @@
                 <x-nav-link href="#" :active="request()->routeIs('dashboard')">
                     Quiénes Somos
                 </x-nav-link>
-                <x-nav-link href="#" :active="request()->routeIs('dashboard')" class="pr-0">
+                <x-nav-link href="#" :active="request()->routeIs('dashboard')" class="py-1 bg-[#25E59B] rounded-full uppercase font-black" style="color: #3C137C !important">
                     Conviértete en Sponsor
                 </x-nav-link>
             @else
