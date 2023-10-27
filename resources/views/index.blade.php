@@ -452,6 +452,13 @@
         </div>
     </section> --}}
     <section class="py-12 bg-white">
+
+        {{-- SANTANDER --}}
+        <section class="pb-12 bg-white">
+            <div class="mx-auto my-auto lg:max-w-screen-lg sm:px-6 lg:px-8">
+                <x-santander />
+            </div>
+        </section>
         <div x-data="{ imgModal : false, imgModalSrc : '' }"
             class="max-w-screen-xl px-4 mx-auto my-auto sm:px-6 lg:px-8">
             <p class="text-[#3C137C] font-black text-xl lg:text-3xl text-center mb-6">Explora la galería de fotos de
@@ -591,5 +598,13 @@
                 </template>
             </div>
         </div>
+
+        {{-- medife --}}
+        <section class="pt-12 bg-white">
+            <div class="mx-auto my-auto lg:max-w-screen-lg sm:px-6 lg:px-8">
+                <img src="{{ asset('images/ads/medife-ads.jpg') }}" alt="" class="w-full">
+            </div>
+        </section>
     </section>
 </x-app-layout>
+~

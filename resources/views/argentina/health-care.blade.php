@@ -68,8 +68,11 @@
                         y Covid-19.
                     </p>
                 </div>
-                <div class="hidden lg:block lg:col-span-1">
-                    <img src="{{ asset('images/ads/osde.jpg') }}" alt="" class="w-full">
+                <div class="col-span-5 lg:col-span-1">
+                    <picture>
+                        <source srcset="{{ asset('images/ads/osde.jpg') }}" media="(min-width: 1024px)">
+                        <img srcset="{{ asset('images/ads/osde-mobile.jpg') }}" alt="" class="w-full mb-4 rounded-lg">
+                    </picture>
                 </div>
             </article>
             <div class="mt-6">

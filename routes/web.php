@@ -137,7 +137,7 @@ Route::get('/gastronomia-delivery/mexico', function(){
 });
 
 Route::get('/argentina/los-beneficios-de-ser-un-expatriado-en-argentina', function(){
-    return view('argentina.los-beneficios-de-ser-un-expatriado-en-argentina-argentina');
+    return view('argentina.los-beneficios-de-ser-un-expatriado-en-argentina');
 });
 
 Route::middleware([
